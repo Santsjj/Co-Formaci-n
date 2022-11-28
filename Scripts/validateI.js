@@ -65,3 +65,14 @@ function PassV() {
       x.type = "password";
     }
 }
+function Redir(){
+    if ((email === true) && (rol.value ==="1")){
+        window.location.href="../CMain/Estudiante.html";
+    }
+    else if ((email === true) && (rol.value ==="2")){
+        window.location.href="../CMain/ListaEmpresas.html";
+    }
+    else if ((email === true) && (rol.value ==="3")){
+        window.location.href="../CMain/GestionA.html";
+    }
+}
