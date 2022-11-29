@@ -66,10 +66,13 @@ function PassV() {
     }
 }
 function Redir(){
-    if ((email === true) && (rol.value ==="1")){
-        window.location.href="../CMain/Estudiante.html";
+
+    if (rol.value ==="1"){
+        console.log("1");
+        window.location.href="../CMain/EmpresasDR.html";
     }
     else if ((email === true) && (rol.value ==="2")){
+        console.log("2");
         window.location.href="../CMain/ListaEmpresas.html";
     }
     else if ((email === true) && (rol.value ==="3")){
