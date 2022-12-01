@@ -2,6 +2,7 @@
 const email = document.querySelector("#iMail");
 const pass = document.querySelector("#iPass");
 const form = document.querySelector("#form");
+const rol = document.querySelector("#iRol");
 
 form,addEventListener("submit", (e)=>{
     e.preventDefault();
@@ -29,7 +30,7 @@ let validFields = {
 
 email.addEventListener('change', function(e) {
     const inputEmail = e.target.value;
-    const patronEmail = /^[a-zA-Z.]+@(u)(n)(i)(e)(m)(p)(r)(e)(s)(a)(r)(i)(a)(l)\.(e)(d)(u)\.(c)(o)$/gm 
+    const patronEmail = /^[a-zA-Z.]+@(u)(n)(i)(e)(m)(p)(r)(e)(s)(a)(r)(i)(a)(l)\.(e)(d)(u)\.(c)(o)$/gm; 
     validFields.email = inputEmail.match(patronEmail) ? true: false;
     console.log(Object.values(validFields));
     if (validFields.email===false){
@@ -66,16 +67,21 @@ function PassV() {
     }
 }
 function Redir(){
-
-    if (rol.value ==="1"){
+    if ((email === "true")){
         console.log("1");
-        window.location.href="../CMain/EmpresasDR.html";
+        window.location.href="../../Co-Formaci-n-main/CMain/ListaEstudiantes.html";
+    } else{
+
     }
-    else if ((email === true) && (rol.value ==="2")){
-        console.log("2");
-        window.location.href="../CMain/ListaEmpresas.html";
-    }
-    else if ((email === true) && (rol.value ==="3")){
-        window.location.href="../CMain/GestionA.html";
-    }
+    // if ((rol.value ==="1")){
+    //     console.log("1");
+    //     window.location.href="../../Co-Formaci-n-main/CMain/ListaEstudiantes.html";
+    // } 
+    // else if ((email === "true") && (rol.value ==="2")){
+    //     console.log("2");
+    //     window.location.href="../CMain/ListaEmpresas.html";
+    // }
+    // else if ((email === "true") && (rol.value ==="3")){
+    //     window.location.href="../CMain/GestionA.html";
+    // }
 }
