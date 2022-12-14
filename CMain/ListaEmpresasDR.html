@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ListaEmpresas</title>
     <link rel="stylesheet" href="../syles/styles.css">
+    <link rel="stylesheet" href="../syles/syles.css">
     <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png"
     sizes="192x192" />
 </head>
@@ -28,96 +29,56 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
         </div>
     </header>
-    <select name="opcion" id="">
-        <option value="0" selected>Programa</option>
-        <option value="">ADMINISTRACIÓN DE EMPRESAS</option>
-        <option value="">CONTADURÍA PÚBLICA Y FINANZAS INTERNACIONALES</option>
-        <option value="">DISEÑO DE PRODUCTO</option>
-        <option value="">FINANZAS Y COMERCIO EXTERIOR</option>
-        <option value="">INGENIERÍA DE SOFTWARE</option>
-        <option value="">INGENIERÍA INDUSTRIAL</option>
-        <option value="">MARKETING Y LOGÍSTICA</option>
-        <option value="">NEGOCIOS INTERNACIONALES</option>
-    </select><br>
-    <select name="opcion" id="">
-        <option value="0" selected>Nacional o Internacional</option>
-        <option value="">Nacional</option>
-        <option value="">Internacional</option>
-    </select><br>
-    <a></a>
-    <table>
-        <tr>
-            <td>Nit
-            </td>
-            <td>Nombre
-            </td>
-            <td></td>
-            <td>Cupos
-            </td>
-            <td>Carreras Solicitadas
-            </td>
-        </tr>
-        <tr>
-            <td>Nit
-            </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
-        </tr>
-        <tr>
-            <td>Nit
-            </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
-        </tr>
-        <tr>
-            <td>Nit
-            </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
-        </tr>
-        <tr>
-            <td>Nit
-            </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
-        </tr>
-        <tr>
-            <td>Nit
-            </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
-        </tr>
-        <tr>
-            <td>Nit
-            </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
-        </tr>
-    </table>
+    <div id="container">
+        <div id="search">
+            <label for="searchInput">Buscar Empresa</label>
+            <input id="searchInput" type="text" placeholder="Buscar">
+            <button><a href="./AñadirEmpresa.html"></a></button>
+    </div>
+    <ul>
+        <li class="name" class="id" onclick="redirigir09()">
+            <p>1021512598</p>
+            <p>Uniempresarial
+                <img class="img" src="../img/placeh.png">
+            </p>
+            <p>Cupos</p>
+        </li><br>
+        <li class="name" class="id" onclick="redirigir09()">
+            <p>2127928</p>
+            <p>KFC
+                <img class="img" src="../img/placeh.png">
+            </p>
+            <p>Cupos</p>
+        </li><br>
+        <li class="name" class="id" onclick="redirigir09()">
+            <p>1412205</p>
+            <p>CorParques
+                <img class="img" src="../img/placeh.png">
+            </p>
+            <p>Cupos</p>
+        </li><br>
+        <li class="name" class="id" onclick="redirigir09()">
+            <p>261120548</p>
+            <p>Banco de Alimentos
+                <img class="img" src="../img/placeh.png">
+            </p>
+            <p>Cupos</p>
+        </li><br>
+        <li class="name" class="id" onclick="redirigir09()">
+            <p>270820954</p>
+            <p>ITS Technology
+                <img class="img" src="../img/placeh.png">
+            </p>
+            <p>Cupos</p>
+        </li><br>
+        <li class="name" class="id" onclick="redirigir09()">
+            <p>241220598</p>
+            <p>Servicámara
+                <img class="img" src="../img/placeh.png">
+            </p>
+            <p>Cupos</p>
+        </li>
+    </ul>
     <footer>
         <div class="footer1">
             <img src="../img/footer.JPG" alt="Logo uniempresarial y cámara de comercio">
@@ -129,5 +90,6 @@
     </footer>
     <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
     <script src="../Scripts/Redirigir.js"></script>
+    <script src="../Scripts/Search.js"></script>
 </body>
 </html>

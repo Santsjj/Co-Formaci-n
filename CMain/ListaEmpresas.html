@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ListaEmpresas</title>
     <link rel="stylesheet" href="../syles/styles.css">
+    <link rel="stylesheet" href="../syles/syles.css">
     <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png"
     sizes="192x192" />
 </head>
@@ -29,7 +30,7 @@
         </div>
     </header>
     <select name="opcion" id="">
-        <option value="0" selected>Programa</option>
+        <option value="0" selected>Cupos Disponibles</option>
         <option value="">ADMINISTRACIÓN DE EMPRESAS</option>
         <option value="">CONTADURÍA PÚBLICA Y FINANZAS INTERNACIONALES</option>
         <option value="">DISEÑO DE PRODUCTO</option>
@@ -44,77 +45,67 @@
         <option value="">Nacional</option>
         <option value="">Internacional</option>
     </select><br>
-    <a></a>
+    <div id="container">
+        <div id="search">
+            <label for="searchInput">Buscar Empresa</label>
+            <input id="searchInput" type="text" placeholder="Buscar">
+    </div>
     <table>
         <tr>
-            <td>Nit
-            </td>
+            <td>Nit</td>
             <td>Nombre
+                <img class="img" src="../img/placeh.png">
             </td>
-            <td>Cupos
-            </td>
-            <td>Carreras Solicitadas
-            </td>
+            <td>Cupos</td>
+            <td>Programas Solicitados</td>
         </tr>
-        <tr>
-            <td>Nit
+        <tr class="name" class="id" onclick="redirigir08()">
+            <td>1021512598</td>
+            <td>Uniempresarial
+                <img class="img" src="../img/placeh.png">
             </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
+            <td>Cupos</td>
+            <td>Programas</td>
         </tr>
-        <tr>
-            <td>Nit
+        <tr class="name" class="id" onclick="redirigir08()">
+            <td>2127928</td>
+            <td>KFC
+                <img class="img" src="../img/placeh.png">
             </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
+            <td>Cupos</td>
+            <td>Programas</td>
         </tr>
-        <tr>
-            <td>Nit
+        <tr class="name" class="id" onclick="redirigir08()">
+            <td>1412205</td>
+            <td>CorParques
+                <img class="img" src="../img/placeh.png">
             </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
+            <td>Cupos</td>
+            <td>Programas</td>
         </tr>
-        <tr>
-            <td>Nit
+        <tr class="name" class="id" onclick="redirigir08()">
+            <td>261120548</td>
+            <td>Banco de Alimentos
+                <img class="img" src="../img/placeh.png">
             </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
+            <td>Cupos</td>
+            <td>Programas</td>
         </tr>
-        <tr>
-            <td>Nit
+        <tr class="name" class="id" onclick="redirigir08()">
+            <td>270820954</td>
+            <td>ITS Technology
+                <img class="img" src="../img/placeh.png">
             </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
+            <td>Cupos</td>
+            <td>Programas</td>
         </tr>
-        <tr>
-            <td>Nit
+        <tr class="name" class="id" onclick="redirigir08()">
+            <td>241220598</td>
+            <td>Servicámara
+                <img class="img" src="../img/placeh.png">
             </td>
-            <td>Nombre
-            </td>
-            <td>Cupos
-            </td>
-            <td>Carreras
-            </td>
+            <td>Cupos</td>
+            <td>Programas</td>
         </tr>
     </table>
     <footer>
@@ -128,5 +119,6 @@
     </footer>
     <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
     <script src="../Scripts/Redirigir.js"></script>
+    <script src="../Scripts/Search.js"></script>
 </body>
 </html>

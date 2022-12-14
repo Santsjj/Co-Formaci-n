@@ -17,5 +17,14 @@ function redirigir05(){
 function redirigir06(){
    window.location.href="../index.html";
 }
-
+function redirigir07(){
+    window.location.href="../CMain/Estudiante.html";
+ }
+ function redirigir08(){
+    window.location.href="../CMain/Empresas.html";
+ }
+ function redirigir09(){
+    window.location.href="../CMain/EmpresasDR.html";
+ }
+ 
  
