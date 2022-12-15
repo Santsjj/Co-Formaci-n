@@ -1,121 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudiante</title>
-    <link rel="stylesheet" href="../syles/styles.css">
-    <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png"
-    sizes="192x192" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudiante</title>
+  <link rel="stylesheet" href="../syles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/logoicono.png">
 </head>
+
 <body>
-    <header>
-        <div class="header1">
-            <div class="divHeader">
-                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
-                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
-                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
-                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
-        </div>
-        <div class="header2">
-            <div class="imagenesHeader">
-            <img src="../img/ue.JPG" alt="Logo Uniempresarial">
-            <img src="../img/comercio.JPG" alt="Logo cámara de comercio">
-            </div>
-            <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
-        </div>
-    </header>
+  <header>
+    <div class="header1">
+      <div class="divHeader">
+        <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+        <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+        <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+        <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
+    </div>
+    <div class="header2">
+      <div>
+        <img src="../img/Logoheader.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+      </div>
+      <a href="./Notificaciones.html"><i class="fa-solid fa-bell"></i> Notificaciones</a>
+      <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
+    </div>
+  </header>
+
+  <section class="parte1">
+    <div class="cog">
+      <p id="EstadoPractica">Estado: con/sin empresa</p>
+      <p>Codigo. 2345</p>
+      <button class="volver"><a href="./GestionA.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+    </div>
+  </section>
+  <br>
+  <h2>Información personal</h2>
+  <section class="infPersonal">
+    <div class="imgEstudiante">
+    <img src="../img/perfil.png" >
+      </div>
     <section>
-        <p>Estado:</p>
-        <a></a>
-        <h1>Información Personal</h1>
-        <img>
-        <p>Fecha de Nacimiento:</p>
-        <p>Edad:</p>
-        <p>Nombre:</p>
-        <p>Género:</p>
-        <p>Código:</p>
-        <p>Tipo de Documento :</p>
-        <p>Número de Identidad:</p>
-        <p>Información Acedemica</p>
-        <p>Programa:</p>
-        <p>Semestre:</p>
-        <p>Promoción:</p>
-        <p>Jornada:</p>
-        <p>Estado:</p>
-        <p>Grupo:</p>
-        <p>Estado Practica: </p>
-        <h1>Información de Contacto</h1>
-        <p>Correo electrónico Personal:</p>
-        <p>Correo electrónico Institucional:</p>
-        <p>Dirección Residencia:</p>
-        <p>Teléfono Celular:</p>
-        <p>Teléfono Fijo:</p>
-        <button>Documentos</button>
-        <h1>Informaciónn Opcional</h1>
-        <p>Estrato</p>
-        <p>Estado Civil</p>
-        <p>Tipo de Sangre</p>
-        <p>EPS</p>
-        <p>Discapacidad:</p>
-        <p>Convenio</p>
-        <p>Numero Libreta Militar</p>
-        <p>Multiculturalidad</p>
-        <p>Contacto de Emergencia</p>
-        <p>Número Telefónico</p>
-        <h1>Empresa Coformadora</h1>
-        <button>Historial Practicas</button>
-        <p>Tipo de Escenario</p>
-        <img>
-        <p>Nombre Empresa</p>
-        <p>Info Empresa</p>
-        <p>NIT</p>
-        <p>Codigo Verificación</p>
-        <p>Contacto Empresa</p>
-        <p>Nombre Contacto</p>
-        <p>Cargo</p>
-        <p>Correo 1</p>
-        <p>Correo 2</p>
-        <p>Celular</p>
-        <p>Fijo</p>
-        <p>Tutor Encargado</P>
-        <p>Nombre Tutor</p>
-        <p>Cargo</p>
-        <p>Correo</p>
-        <p>Celular</p>
-        <p>Tipo de Vinculación</p>
-        <p>Vinculación Formativa o Contrato Sena</p>
-        <p>Tiempo Contrato</p>
-        <p>Sostenimiento o sueldo</p>
-        <p>Cantidad $</p>
-        <p>Perioridad de Pago</p>
-        <p>Horario</p>
-        <p>Forma de Pago</p>
-        <p>Docente de acompañamiento</p>
-        <p>Nombre Docente</p>
-        <p>Documento Identidad</p>
-        <p>Correo Institucional</p>
-        <p>Celular</p>
-        <p>Fecha Practicas:</p>
-        <h1>Practicas</h1>
-        <p>Semestre:</p>
-        <p>Fecha Inicio:</p>
-        <p>Fecha Fin:</p>
-        <p>Empresa:</p>
+    <p>Fecha de nacimiento:</p>
+    <p>Edad:</p>
+    <p>Nombre:</p>
+    <p>Género:</p>
+    <p>Código:</p>
+    <p>Tipo de documento :</p>
+    <p>Número de identidad:</p>
     </section>
-    <footer>
-        <div class="footer1">
-            <img src="../img/footer.JPG" alt="Logo uniempresarial y cámara de comercio">
-            <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
-        </div>
-        <div class="footer2">
-            <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
-    <script src="../Scripts/Redirigir.js"></script>
+ 
+  <br>
+  <section class="InfAcademica">
+    <h3>Información Acedemica</h3>
+    <p>Programa:</p>
+    <p>Semestre:</p>
+    <p>Promoción:</p>
+    <p>Jornada:</p>
+    <p>Fase:</p>
+    <p>Grupo:</p>
+    <p>Estado Practica: </p>
+  </section>
+     </section>
+  <section class="infContacto">
+    <h2>Información de Contacto</h2>
+    <p>Correo electrónico Personal:</p>
+    <p>Correo electrónico Institucional:</p>
+    <p>Dirección Residencia:</p>
+    <p>Teléfono Celular:</p>
+    <p>Teléfono Fijo:</p>
+    <button>Documentos</button>
+  </section>
+  <section class="InfOpcional">
+    <h2>Información Opcional</h2>
+    <p>Estrato</p>
+    <p>Estado Civil</p>
+    <p>Tipo de Sangre</p>
+    <p>EPS</p>
+    <p>Discapacidad:</p>
+    <p>Numero Libreta Militar</p>
+    <p>Multiculturalidad</p>
+    <p>Contacto de Emergencia</p>
+    <p>Número Telefónico</p>
+  </section>
+  <h1>Practicas</h1>
+  <p>Semestre:</p>
+  <p>Fecha Inicio:</p>
+  <p>Fecha Fin:</p>
+  <p>Empresa:</p>
+  </section>
+  <footer>
+    <div class="footer1">
+      <img src="../img/logoFooter.png" alt="Logo uniempresarial y cámara de comercio">
+      <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738
+      </p>
+    </div>
+    <div class="footer2">
+      <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá
+        Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación.
+        Registro Icfes 2738.</p>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+  <script src="../Scripts/Redirigir.js"></script>
+  <script src="../Scripts/validateEstd.js"></script>
 </body>
+
 </html>

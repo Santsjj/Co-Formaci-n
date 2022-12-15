@@ -1,155 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudiante</title>
-    <link rel="stylesheet" href="../syles/styles.css">
-    <link rel="stylesheet" href="../syles/syles.css">
-    <link rel="icon" href="https:Placeh //www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png"
-    sizes="192x192" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudiante</title>
+  <link rel="stylesheet" href="../syles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/logoicono.png">
 </head>
+
 <body>
-    <header>
-        <div class="header1">
-            <div class="divHeader">
-                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
-                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
-                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
-                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
-        </div>
-        <div class="header2">
-            <div class="imagenesHeader">
-            <img src="../img/ue.JPG" alt="Logo Uniempresarial">
-            <img src="../img/comercio.JPG" alt="Logo cámara de comercio">
-            </div>
-            <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
-        </div>
-    </header>
-    <section>
-        <p>Estado: </p>
-        <button>Editar</button>
-        <h1>Información Personal</h1>
-        <img src="../img/placeh.png" class="img"><br>
-        <input type="file" accept="image/png, image/jpeg">
-        <p>Fecha de Nacimiento: </p>
-        <input type="date" required>
-        <p>Edad:</p>
-        <input type="number" required>
-        <p>Nombre: </p>
-        <input type="text" required>
-        <p>Género: </p>
-        <select required>
-            <option>Femenino</option>
-            <option>Masculino</option>
-            <option>Otro</option>
-        </select>
-        <p>Código: </p>
-        <input type="number" required>
-        <p>Tipo de Documento : </p>
-        <select required>
-            <option>C.C</option>
-            <option>T.I</option>
-        </select>
-        <p>Número de Identidad: </p>
-        <input type="number" required>
-        <p>Información Acedemica</p>
-        <p>Programa: </p>
-        <select name="opcion" required>
-            <option selected>Programa</option>
-            <option >ADMINISTRACIÓN DE EMPRESAS</option>
-            <option >CONTADURÍA PÚBLICA Y FINANZAS INTERNACIONALES</option>
-            <option >DISEÑO DE PRODUCTO</option>
-            <option >FINANZAS Y COMERCIO EXTERIOR</option>
-            <option >INGENIERÍA DE SOFTWARE</option>
-            <option >INGENIERÍA INDUSTRIAL</option>
-            <option >MARKETING Y LOGÍSTICA</option>
-            <option >NEGOCIOS INTERNACIONALES</option>
-        </select><br>
-        <p>Semestre: </p>
-        <select name="opcion" required>
-            <option selected>Semestre</option>
-            <option >Primero</option>
-            <option >Segundo</option>
-            <option >Tercero</option>
-            <option >Cuarto</option>
-            <option >Quinto</option>
-            <option >Sexto</option>
-            <option >Septimo</option>
-        </select><br>
-        <p>Promoción: </p>
-        <input type="text" required>
-        <p>Jornada: </p>
-            <input type="radio" name="jornada">Diurna
-            <input type="radio" name="jornada">Nocturna
-        <p>Fase: </p>
-         <input type="radio" name="fase">Aula
-         <input type="radio" name="fase">Practica
-        <p>Estado Practica:  </p>
-        <p>Campo no Editable</p>
-        <h1>Información de Contacto</h1>
-        <p>Correo electrónico Personal: </p>
-        <input type="email" required>
-        <p>Correo electrónico Institucional: </p>
-        <input type="email" required>
-        <p>Dirección Residencia: </p>
-        <input type="text" required>
-        <p>Teléfono Celular: </p>
-        <input type="number" required>
-        <p>Teléfono Fijo:</p>
-        <input type="number" required><br>
-        <button>Documentos</button>
-        <h1>Información Opcional</h1>
-        <p>Estrato</p>
-        <select >
-            <option>Uno</option>
-            <option>Dos</option>
-            <option>Tres</option>
-            <option>Cuatro</option>
-            <option>Cinco</option>
-            <option>Seis</option>
-        </select>
-        <p>Estado Civil</p>
-
-        <p>Tipo de Sangre</p>
-        <select >
-            <option>A+</option>
-            <option>A-</option>
-            <option>B+</option>
-            <option>B-</option>
-            <option>C+</option>
-            <option>C-</option>
-            <option>AB+</option>
-            <option>AB-</option>
-        </select>
-        <p>EPS</p>
-        <input type="text" >
-        <p>Discapacidad:</p>
-
-        <p>Convenio</p>
-
-        <p>Numero Libreta Militar</p>
-        <input type="number">
-        <p>Multiculturalidad</p>
-
-        <p>Contacto de Emergencia</p>
-        <input type="text">
-        <p>Número Telefónico</p>
-        <input type="number">
-    </section>
-    <footer>
-        <div class="footer1">
-            <img src="../img/footer.JPG" alt="Logo uniempresarial y cámara de comercio">
-            <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
-        </div>
-        <div class="footer2">
-            <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
-        </div>
-    </footer>
-    <script src="https:Placeh //kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
-    <script src="../Scripts/Redirigir.js"></script>
+  <header>
+    <div class="header1">
+      <div class="divHeader">
+        <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+        <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+        <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+        <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
+    </div>
+    <div class="header2">
+      <div>
+        <img src="../img/Logoheader.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+      </div>
+      <a href="./Notificaciones.html"><i class="fa-solid fa-bell"></i> Notificaciones</a>
+      <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
+    </div>
+    </div>
+  </header>
+  <section>
+    <form id="form">
+      <h1>Información Personal</h1>
+      <img src="../img/placeh.png" class="img"><br>
+      <input type="file" accept="image/png, image/jpeg">
+      <p>Fecha de Nacimiento: </p>
+      <input id="fn" type="date" required>
+      <p>Edad:</p>
+      <input id="age" type="number" required>
+      <p>Nombre: </p>
+      <input id="name" type="text" required>
+      <p>Género: </p>
+      <select id="gener" required>
+        <option>Femenino</option>
+        <option>Masculino</option>
+        <option>Otro</option>
+      </select>
+      <p>Código: </p>
+      <input id="code" type="number" required>
+      <p>Tipo de Documento : </p>
+      <select id="td" required>
+        <option>C.C</option>
+        <option>T.I</option>
+      </select>
+      <p>Número de Identidad: </p>
+      <input id="ni" type="number" required>
+      <p>Información Acedemica</p>
+      <p>Programa: </p>
+      <select id="prog" name="opcion" required>
+        <option selected>Programa</option>
+        <option>ADMINISTRACIÓN DE EMPRESAS</option>
+        <option>CONTADURÍA PÚBLICA Y FINANZAS INTERNACIONALES</option>
+        <option>DISEÑO DE PRODUCTO</option>
+        <option>FINANZAS Y COMERCIO EXTERIOR</option>
+        <option>INGENIERÍA DE SOFTWARE</option>
+        <option>INGENIERÍA INDUSTRIAL</option>
+        <option>MARKETING Y LOGÍSTICA</option>
+        <option>NEGOCIOS INTERNACIONALES</option>
+      </select><br>
+      <p>Semestre: </p>
+      <select id="semestre" name="opcion" required>
+        <option selected>Semestre</option>
+        <option>Primero</option>
+        <option>Segundo</option>
+        <option>Tercero</option>
+        <option>Cuarto</option>
+        <option>Quinto</option>
+        <option>Sexto</option>
+        <option>Septimo</option>
+      </select><br>
+      <p>Promoción: </p>
+      <input id="prom" type="text" required>
+      <p>Jornada: </p>
+      <input id="" type="radio" name="jornada">Diurna
+      <input id="" type="radio" name="jornada">Nocturna
+      <p>Fase: </p>
+      <input id="" type="radio" name="fase">Aula
+      <input id="" type="radio" name="fase">Practica
+      <p>Estado Practica: </p>
+      <p>Campo no Editable</p>
+      <h1>Información de Contacto</h1>
+      <p>Correo electrónico Personal: </p>
+      <input id="emailp" type="email" required>
+      <p>Correo electrónico Institucional: </p>
+      <input id="emaili" type="email" required>
+      <p>Dirección Residencia: </p>
+      <input id="dirrecionr" type="text" required>
+      <p>Teléfono Celular: </p>
+      <input id="telefc" type="tel" required>
+      <p>Teléfono Fijo:</p>
+      <input id="teleff" type="tel" required><br>
+      <button>Documentos</button>
+      <h1>Información Opcional</h1>
+      <p>Estrato</p>
+      <select id="estrato">
+        <option selected>Seleccione</option>
+        <option>Uno</option>
+        <option>Dos</option>
+        <option>Tres</option>
+        <option>Cuatro</option>
+        <option>Cinco</option>
+        <option>Seis</option>
+      </select>
+      <p>Estado Civil</p>
+      <select id="estadoc">
+        <option selected>Seleccione</option>
+        <option>Solter@</option>
+        <option>Casad@</option>
+        <option>Divorciad@</option>
+        <option>viud@</option>
+        <option>Unión Libre</option>
+      </select>
+      <p>Tipo de Sangre</p>
+      <select id="ts">
+        <option selected>Seleccione</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>C+</option>
+        <option>C-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+      </select>
+      <p>EPS</p>
+      <input id="eps" type="text">
+      <p>Discapacidad:</p>
+      <input id="discapacidad" type="text">
+      <p>Convenio</p>
+      <p>Numero Libreta Militar</p>
+      <input id="nlm" type="number">
+      <p>Multiculturalidad</p>
+      <select id="multc">
+        <option>Indígena</option>
+        <option>Afrocolombiano</option>
+        <option>Romaníes</option>
+      </select>
+      <p>Contacto de Emergencia</p>
+      <input type="text">
+      <p>Número Telefónico</p>
+      <input type="number">
+    </form>
+  </section>
+  <footer>
+    <div class="footer1">
+      <img src="../img/logoFooter.png" alt="Logo uniempresarial y cámara de comercio">
+      <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738
+      </p>
+    </div>
+    <div class="footer2">
+      <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá
+        Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación.
+        Registro Icfes 2738.</p>
+    </div>
+  </footer>
+  <script src="https:Placeh //kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+  <script src="../Scripts/Redirigir.js"></script>
+  <script src="../Scripts/validateEstd.js"></script>
 </body>
+
 </html>

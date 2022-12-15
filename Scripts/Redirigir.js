@@ -26,5 +26,7 @@ function redirigir07(){
  function redirigir09(){
     window.location.href="../CMain/EmpresasDR.html";
  }
- 
+ function redirigir10(){
+    window.location.href="../CMain/EditEstudiante.html";
+ }
  

@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../syles/styles.css">
-    <title>GestionA</title>
-  <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png" sizes="192x192" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <title>Coformación</title>
+    <link rel="icon" href="../img/logoicono.png">
 </head>
 <body>
 <header>
@@ -21,18 +24,29 @@
         </div>
         <div class="header2">
             <div>
-            <img src="../img/ue.JPG" alt="Logo Uniempresarial">
-            <img src="../img/comercio.JPG" alt="Logo cámara de comercio">
+            <img src="../img/Logoheader.png" alt="Logo Uniempresarial y logo Cámara de comercio">
             </div>
+            <a href="./Notificaciones.html"><i class="fa-solid fa-bell"></i> Notificaciones</a>
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
-    <h2>Perfil de Co-Formación</h2>  
-    <a onclick="redirigirEs()"><i class="fa-solid fa-graduation-cap"></i></a>Estudiantes<br>
-    <a onclick="redirigirEm()"><i class="fa-solid fa-building"></i></a>Empresas<br>
+    <section class="sectionTitulo">
+    <div class="divTitulo">
+      Coformación
+    </div>  
+    </section>
+    <div class="menuCoformacion">
+      <div onclick="redirigirEs()">
+          <a class="botonCoformacion" onclick="redirigirEs()" href="./Estudiante.html"><i class="fa-solid fa-graduation-cap"></i>Estudiantes</a><br>
+      </div>
+      <div onclick="redirigirEm()">
+          <a class="botonCoformacion2" onclick="redirigirEm()" href="./ListaEmpresas.html"><i class="fa-solid fa-building"></i>Empresas</a><br>
+      </div>
+    </div>
+  
   <footer>
         <div class="footer1">
-            <img src="../img/footer.JPG" alt="Logo uniempresarial y cámara de comercio">
+            <img src="../img/logoFooter.png" alt="Logo uniempresarial y cámara de comercio">
             <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
         </div>
         <div class="footer2">

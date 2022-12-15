@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresas</title>
     <link rel="stylesheet" href="../syles/styles.css">
-    <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png"
-    sizes="192x192" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/logoicono.png">
 </head>
 <body>
     <header>
@@ -21,32 +23,40 @@
                 <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
         </div>
         <div class="header2">
-            <div class="imagenesHeader">
-            <img src="../img/ue.JPG" alt="Logo Uniempresarial">
-            <img src="../img/comercio.JPG" alt="Logo cámara de comercio">
+            <div>
+            <img src="../img/Logoheader.png" alt="Logo Uniempresarial y logo Cámara de comercio">
             </div>
-            <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
+            <a href="./Notificaciones.html"><i class="fa-solid fa-bell"></i> Notificaciones</a>
+            <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
-    <section>
-        <a></a>
-        <h1>Nombre:</h1>
-        <link>
-        <p>Información Empresa</p>
+    <section class="infoEmpresa">
+      <button id="back">
+        <a href="./ListaEmpresas.html"><i class="fa-solid fa-arrow-left"></i></a>
+      </button>
+      <div class="divInfo">
+          <img src="../img/logoempresa.jpg">
+        <div class="divInfo2">
+          <h1>Nombre empresa.</h1>
+          <p>Razón social</p>
+          <a class="paginaEmpresa" href="https://campus.uniempresarial.edu.co/login/index.php">
+              Página web
+          </a>
+          <p>Información Empresa</p>
+        </div>
+      </div>
         <p>NIT</p>
         <p>Empresa propia o referida</p>
         <h1>Información de Contacto</h1>
-        <p>Nombre Persona Respondable Fase Empresa</p>
-        <select>
-            <option>CC</option>
-        </select>
+        <p>Nombre Persona Responsable Fase Empresa</p>
+        <p>Tipo de Documento</p>
         <p>Número Identificación</p>
         <p>Cargo</p>
         <p>Celular</p>
         <p>Correo electrónico:</p>
-        <p>Correo Alternativo</p>
+        <p>Correo Alternativo:</p>
         <h1>Solicitud de estudiantes</h1>
-        <table>
+        <table class="tabla">
             <tr>
                 <td>Programa Solictadas</td>
                 <td>Cupos Disponibles</td>
@@ -89,7 +99,7 @@
     </section>
     <footer>
         <div class="footer1">
-            <img src="../img/footer.JPG" alt="Logo uniempresarial y cámara de comercio">
+            <img src="../img/logoFooter.png" alt="Logo uniempresarial y cámara de comercio">
             <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
         </div>
         <div class="footer2">

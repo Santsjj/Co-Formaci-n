@@ -8,19 +8,19 @@ form, addEventListener("submit", (e) => {
   e.preventDefault();
   if (validFieldsForm() === -1) {
     modalAlerta("Informacion Validada");
-    if ((rol.value ==="1")){
+    if ((rol.value === "1")) {
       console.log("1");
-      window.location.href="../../Co-Formaci-n-main/CMain/ListaEstudiantes.html";
-  } else if ((email === "true") && (rol.value ==="2")){
+      window.location.href = "../../Co-Formaci-n-main/CMain/ListaEstudiantes.html";
+    } else if ((email === "true") && (rol.value === "2")) {
       console.log("2");
-      window.location.href="../../CMain/ListaEmpresas.html";
-  }else if ((email === "true") && (rol.value ==="3")){
-      window.location.href="../../CMain/GestionA.html";
-  }else {
-    modalAlerta("Error");
-  }
+      window.location.href = "../../CMain/ListaEmpresas.html";
+    } else if ((email === "true") && (rol.value === "3")) {
+      window.location.href = "../../CMain/GestionA.html";
+    } else {
+      modalAlerta("Error");
+    }
 
-})
+  })
 
 const validFieldsForm = () => {
   const values = Object.values(validFields);
@@ -81,5 +81,5 @@ function Redir() {
   } else {
 
   }
-  
+
 }
