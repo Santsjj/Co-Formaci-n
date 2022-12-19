@@ -29,4 +29,13 @@ function redirigir07(){
  function redirigir10(){
     window.location.href="../CMain/EditEstudiante.html";
  }
+  function redirigir11(){
+    window.location.href="../CMain/EditEstudianteCOF.html";
+ }
+  function redirigir12(){
+    window.location.href="../CMain/ListaEmpresas";
+ }
+  function redirigir13(){
+    window.location.href="../CMain/AñadirEmpresa.html";
+ }
  

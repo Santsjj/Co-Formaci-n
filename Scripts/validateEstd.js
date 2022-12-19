@@ -17,7 +17,7 @@ const validFieldsForm = () => {
 //Objeto de Validación
 
 let validFields = {
-  //información personal
+  //INFORMACIÓN PERSONAL
   fechaN: false,
   edad: false,
   name: false,
@@ -27,7 +27,13 @@ let validFields = {
   numind: false,
   prog: false,
   semestre: false,
-  prom: false
+  prom: false,
+  //INFORMACIÓN DE CONTACTO
+  emaili: false,
+  emailp: false,
+  drc: false,
+  telefc: false,
+  teleff: false
 }
 
 
@@ -57,7 +63,7 @@ name.addEventListener('change', (e) => {
 
 const gener = document.getElementById("gener");
 gener.addEventListener('change', (e) => {
-  validFields.gener = gener.selectedIndex > 0 ? true : false;
+  validFields.gener = gener.checked === true ? true : false;
   console.log(Object.values(validFields));
 })
 
@@ -85,22 +91,63 @@ numind.addEventListener('change', (e) => {
 
 const prog = document.getElementById("prog");
 prog.addEventListener('change', (e) => {
-  validFields.prog = prog.selectedIndex > 0 ? true : false;
+  validFields.prog = prog.checked === true ? true : false;
   console.log(Object.values(validFields));
 })
 
 const semestre = document.getElementById("semestre");
 semestre.addEventListener('change', (e) => {
-  validFields.semestre = semestre.selectedIndex > 0 ? true : false;
+  validFields.semestre = semestre.checked === true ? true : false;
   console.log(Object.values(validFields));
 })
 
 const prom = document.getElementById("prom");
 prom.addEventListener('change', (e) => {
   const inputprm = e.target.value;
-  const patroprm = /^[0-9]{1,}$/gm;
+  const patroprm = /^[a-z0-9]{1,}$/gm;
   validFields.prom = inputprm.match(patroprm) ? true : false;
   console.log(Object.values(validFields));
 })
 
+
+
 ///////// INFORMACIÓN DE CONTACTO
+const emailp=document.getElementById("emailp");
+emailp.addEventListener('change', function(e){
+  const inputEmailp = e.target.value;
+  const patronEmailp = /[a-zA-Z0-9-_.]+@[a-zA-Z0-9-_]+(\.[a-zA-Z]{2,4})/gm
+  validFields.emailp = inputEmailp.match(patronEmailp) ? true : false;
+} )
+
+const emaili = document.getElementById("emaili");
+emaili.addEventListener('change', function(e) {
+  const inputEmail = e.target.value;
+  const patronEmail = /^[a-zA-Z.]+@(u)(n)(i)(e)(m)(p)(r)(e)(s)(a)(r)(i)(a)(l)\.(e)(d)(u)\.(c)(o)$/gm;
+  validFields.emaili = inputEmail.match(patronEmail) ? true : false;
+  console.log(Object.values(validFields));
+  if (validFields.emaili === false) {
+    modalAlerta("El correo no es institucional");
+  }
+
+});
+
+const dirrecionr = document.getElementById("dirrecionr");
+dirrecionr.addEventListener('change', function(e){
+  const inputdrc = e.target.value;
+  const patrondrc = /[a-zA-Z0-9-_#]/gm;
+  validFields.drc = inputdrc.match(patrondrc) ? true : false;
+})
+
+const telefc=document.getElementById("telefc");
+telefc.ateleffddEventListener('change', function(e){
+  const inputtlf = e.target.value;
+  const patrontlf = /[0-9]{10}/gm;
+  validFields.telefc = inputtlf.match(patrontlf) ? true : false;
+})
+
+const teleff=document.getElementById("teleff");
+teleff.addEventListener('change', function(e){
+  const inputtlff = e.target.value;
+  const patrontlff = /[0-9]{6,}/gm;
+  validFields.teleff = inputtlff.match(patrontlff) ? true : false;
+})

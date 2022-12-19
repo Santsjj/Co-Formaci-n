@@ -8,8 +8,8 @@
   <title>Estudiante</title>
   <link rel="stylesheet" href="../syles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
   <link rel="icon" href="../img/logoicono.png">
 </head>
 
@@ -31,21 +31,21 @@
       <a href="./Notificaciones.html"><i class="fa-solid fa-bell"></i> Notificaciones</a>
       <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
     </div>
-    </div>
   </header>
   <section>
     <form id="form">
       <h1>Información Personal</h1>
-      <img src="../img/placeh.png" class="img"><br>
-      <input type="file" accept="image/png, image/jpeg">
+      <img src="../img/placeh.png" class="img" alt="foto"><br>
+      <input type="file" accept="image/png, image/jpeg" >
       <p>Fecha de Nacimiento: </p>
       <input id="fn" type="date" required>
       <p>Edad:</p>
       <input id="age" type="number" required>
       <p>Nombre: </p>
       <input id="name" type="text" required>
-      <p>Género: </p>
-      <select id="gener" required>
+      <p>Sexo: </p>
+      <select id="sex" required>
+        <option value="" selected>Sexo</option>
         <option>Femenino</option>
         <option>Masculino</option>
         <option>Otro</option>
@@ -54,6 +54,7 @@
       <input id="code" type="number" required>
       <p>Tipo de Documento : </p>
       <select id="td" required>
+        <option value="" selected>Seleccione</option>
         <option>C.C</option>
         <option>T.I</option>
       </select>
@@ -62,7 +63,7 @@
       <p>Información Acedemica</p>
       <p>Programa: </p>
       <select id="prog" name="opcion" required>
-        <option selected>Programa</option>
+        <option value="" selected>Programa</option>
         <option>ADMINISTRACIÓN DE EMPRESAS</option>
         <option>CONTADURÍA PÚBLICA Y FINANZAS INTERNACIONALES</option>
         <option>DISEÑO DE PRODUCTO</option>
@@ -74,7 +75,7 @@
       </select><br>
       <p>Semestre: </p>
       <select id="semestre" name="opcion" required>
-        <option selected>Semestre</option>
+        <option value="" selected>Semestre</option>
         <option>Primero</option>
         <option>Segundo</option>
         <option>Tercero</option>
@@ -86,11 +87,11 @@
       <p>Promoción: </p>
       <input id="prom" type="text" required>
       <p>Jornada: </p>
-      <input id="" type="radio" name="jornada">Diurna
-      <input id="" type="radio" name="jornada">Nocturna
+      <input id="jornada1" type="radio" name="jornada">Diurna
+      <input id="jornada2" type="radio" name="jornada">Nocturna
       <p>Fase: </p>
-      <input id="" type="radio" name="fase">Aula
-      <input id="" type="radio" name="fase">Practica
+      <input id="fase1" type="radio" name="fase">Aula
+      <input id="fase2" type="radio" name="fase">Practica
       <p>Estado Practica: </p>
       <p>Campo no Editable</p>
       <h1>Información de Contacto</h1>
@@ -103,7 +104,7 @@
       <p>Teléfono Celular: </p>
       <input id="telefc" type="tel" required>
       <p>Teléfono Fijo:</p>
-      <input id="teleff" type="tel" required><br>
+      <input id="teleff" type="tel" placeholder="(601)" required><br>
       <button>Documentos</button>
       <h1>Información Opcional</h1>
       <p>Estrato</p>
@@ -168,7 +169,7 @@
         Registro Icfes 2738.</p>
     </div>
   </footer>
-  <script src="https:Placeh //kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
   <script src="../Scripts/Redirigir.js"></script>
   <script src="../Scripts/validateEstd.js"></script>
 </body>
