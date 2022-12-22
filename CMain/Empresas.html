@@ -30,73 +30,87 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
+  <main>
     <section class="infoEmpresa">
       <button id="back" onclick="redirigir12()"><i class="fa-solid fa-arrow-left"></i></button>
       <div class="divInfo">
           <img src="../img/logoempresa.jpg" alt="logo">
         <div class="divInfo2">
           <h1>Nombre empresa.</h1>
+          <p>NIT: 0123456</p>
           <p>Razón social</p>
           <a class="paginaEmpresa" href="https://campus.uniempresarial.edu.co/login/index.php">
               Página web
           </a>
-          <p>Información Empresa</p>
         </div>
       </div>
-        <p>NIT</p>
-        <p>Empresa propia o referida</p>
-        <h1>Información de Contacto</h1>
-        <p>Nombre Persona Responsable Fase Empresa</p>
-        <p>Tipo de Documento</p>
-        <p>Número Identificación</p>
-        <p>Cargo</p>
-        <p>Celular</p>
-        <p>Correo electrónico:</p>
-        <p>Correo Alternativo:</p>
-        <h1>Solicitud de estudiantes</h1>
-        <table class="tabla">
+      <div class="divInfo3">
+        <p class="infoEmpresa">Información empresa. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas volutpat massa eget congue. Praesent vestibulum enim id velit eleifend, quis consequat libero vulputate. Morbi interdum imperdiet aliquam. Nunc sit amet erat fermentum, molestie quam quis, consequat leo. Proin lacinia ultrices ligula et egestas. Vestibulum eleifend metus ut gravida venenatis. Nunc scelerisque eleifend ligula, vitae rhoncus arcu accumsan quis. Aliquam ut quam nec nibh molestie hendrerit ut vel sapien.</p>
+        <p class="pInfo">Número Rut: 01234567</p>
+        <p class="pInfo2">Código de verificación: 0123</p><br>
+        <a href="EmpresasDR.html">Más información sobre la empresa</a>
+      </div>
+      <div class=infoContacto>
+      <h1>Información de contacto</h1>
+        <div>
+        <p><strong>Responsable fase empresa:</strong> Nombre Completo.</p>
+        <p class="numIde"><strong>Identificación:</strong></p>
+        <select class="ide">
+          <option value="1" selected>C.C</option>
+        </select>
+        <p class="numIde"><strong>N°</strong> 012345678</p>
+        <p><strong>Cargo:</strong> Ejemplo cargo.</p>
+        <p><strong>Célular:</strong> <a class="aInfo" href="https://web.whatsapp.com/">+57-3201234567</a></p>
+        <p><strong>Correo electrónico:</strong><a class="aInfo" href="https://outlook.office.com/"> Correo@uniempresarial.edu.co</a></p>
+        <p><strong>Correo Alternativo:</strong><a class="aInfo" href="https://outlook.office.com/"> CorreoAlternativo@uniempresarial.edu.co</a></p>
+        </div>
+      </div>
+        <h1 class="h1Empresa">Solicitud de estudiantes</h1>
+        <table class="tablaEmpresa">
             <tr>
-                <td>Programa Solictadas</td>
-                <td>Cupos Disponibles</td>
-                <td>Cupos Ocupados</td>
+                <th class="thPrograma">Programa solicitados</th>
+                <th>Cupos Disponibles</th>
+                <th>Cupos Ocupados</th>
             </tr>
             <tr>
-                <td>Programa</td>
-                <td>N</td>
-                <td>N</td>
+                <td class="tdPrograma">Ingeniería de software</td>
+                <td class="tdSol">4</td>
+                <td class="tdOcu">1</td>
             </tr>
             <tr>
-                <td>Programa</td>
-                <td>N</td>
-                <td>N</td>
+                <td class="tdPrograma">Administración de empresas</td>
+                <td class="tdSol">1</td>
+                <td class="tdOcu">2</td>
             </tr>
             <tr>
-            <td>Programa</td>
-            <td>N</td>
-            <td>N</td>
+            <td class="tdPrograma">Marketing y logística</td>
+            <td class="tdSol">3</td>
+            <td class="tdOcu">4</td>
             </tr>
         </table>
-        <p>Total Cupos Disponibles:</p>
-        <p>Estudiantes</p>
-        <table>
+        <p class="cupos"><strong>Total cupos disponibles:</strong> 7</p>
+        <h1 class="h1Enempresa">Estudiantes en la empresa</h1>
+        <table class="tablaEstudiantes">
             <tr>
-                <td>Nombre</td>
-                <td>Programa</td>
-                <td>Semestre</td>
+                <td class="td">Nombre completo</td>
+                <td class="tdCentro">Programa</td>
+                <td class="tdCentro">Semestre</td>
             </tr>
             <tr>
-                <td>Nombre</td>
-                <td>Programa</td>
-                <td>Semestre</td>
+                <td class="td">Nombre completo</td>
+                <td class="tdCentro">Programa</td>
+                <td class="tdCentro">Semestre</td>
             </tr>
             <tr>
-                <td>Nombre</td>
-                <td>Programa</td>
-                <td>Semestre</td>
+                <td class="td">Nombre completo</td>
+                <td class="tdCentro">Programa</td>
+                <td class="tdCentro">Semestre</td>
             </tr>
         </table>
     </section>
-    <footer>
+</main>
+      <footer>
         <div class="footer1">
             <img src="../img/logoFooter.png" alt="Logo uniempresarial y cámara de comercio">
             <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>

@@ -36,6 +36,6 @@ function redirigir07(){
     window.location.href="../CMain/ListaEmpresas";
  }
   function redirigir13(){
-    window.location.href="../CMain/AñadirEmpresa.html";
+    window.location.href="../CMain/AnadirEmpresa.html";
  }
  

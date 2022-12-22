@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudiante</title>
+    <title>Notificaciones</title>
     <link rel="stylesheet" href="../syles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,20 +30,25 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
-    <section>
-        <h1>Notificaciones</h1>
-        <section>
-            <div>
-                <p>Para recordar</p>
-                <p>PlaceH</p>
+    <section class="sectionTitulo">
+    <div class="divTitulo">
+      Notificaciones
+    </div> 
+    </section >
+  <button id="back2" onclick="redirigir12()"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="notificaciones">
+                <p class="icono"><i class="fa-solid fa-triangle-exclamation"></i></p>
+                <p class="titulo">Para recordar</p>
+                <p class="infoNot">Su certificado de EPS expirará pronto.</p>
+            </div >
+            <div class="notificaciones">
+              <p class="icono2"><i class="fa-solid fa-circle-exclamation"></i></p>
+                <p class="titulo2">Importante</p>
+                <p class="infoNot"> Actualice su hoja de vida.</p>
             </div>
-            <div>
-                <p>Importante</p>
-                <p>PlaceH</p>
-            </div>
-            <div>
-                <p>Hecho</p>
-                <p>PlaceH</p>
+            <div class="notificaciones">
+              <p class="icono3"><i class="fa-solid fa-circle-check"></i></p>
+              <p class="infoNot2"> Su estado ha sido actualizado de "En aula" a "En proceso".</p>
             </div>
         </section>
     </section>

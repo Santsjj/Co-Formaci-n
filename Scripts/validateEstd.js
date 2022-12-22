@@ -1,7 +1,8 @@
+const form = document.getElementById("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (validFieldsForm() === -1) {
-    modalAlerta("Información Validada");
+    modalAlerta("Información guardada");
   } else {
     modalAlerta("Error");
   }
@@ -41,7 +42,7 @@ let validFields = {
 ///////// INFORMACIÓN PERSONAL
 const datebornig = document.getElementById("fn");
 datebornig.addEventListener('change', (e) => {
-  validFields.fechaN = datebornig.selectedIndex > 0 ? true : false;
+  validFields.fechaN = datebornig.constructor ? true : false;
   console.log(Object.values(validFields));
 })
 
@@ -53,8 +54,8 @@ age.addEventListener('change', (e) => {
   console.log(Object.values(validFields));
 })
 
-const name = document.getElementById("name");
-name.addEventListener('change', (e) => {
+const namestd = document.getElementById("name");
+namestd.addEventListener('change', (e) => {
   const inputnm = e.target.value;
   const patronm = /([a-zA-Z]{3,})$/g;
   validFields.name = inputnm.match(patronm) ? true : false;
@@ -112,12 +113,12 @@ prom.addEventListener('change', (e) => {
 
 
 ///////// INFORMACIÓN DE CONTACTO
-const emailp=document.getElementById("emailp");
-emailp.addEventListener('change', function(e){
+const emailp = document.getElementById("emailp");
+emailp.addEventListener('change', function(e) {
   const inputEmailp = e.target.value;
   const patronEmailp = /[a-zA-Z0-9-_.]+@[a-zA-Z0-9-_]+(\.[a-zA-Z]{2,4})/gm
   validFields.emailp = inputEmailp.match(patronEmailp) ? true : false;
-} )
+})
 
 const emaili = document.getElementById("emaili");
 emaili.addEventListener('change', function(e) {
@@ -132,22 +133,25 @@ emaili.addEventListener('change', function(e) {
 });
 
 const dirrecionr = document.getElementById("dirrecionr");
-dirrecionr.addEventListener('change', function(e){
+dirrecionr.addEventListener('change', function(e) {
   const inputdrc = e.target.value;
   const patrondrc = /[a-zA-Z0-9-_#]/gm;
   validFields.drc = inputdrc.match(patrondrc) ? true : false;
+  console.log(Object.values(validFields));
 })
 
-const telefc=document.getElementById("telefc");
-telefc.ateleffddEventListener('change', function(e){
+const telefc = document.getElementById("telefc");
+telefc.addEventListener('change', function(e) {
   const inputtlf = e.target.value;
   const patrontlf = /[0-9]{10}/gm;
   validFields.telefc = inputtlf.match(patrontlf) ? true : false;
+  console.log(Object.values(validFields));
 })
 
-const teleff=document.getElementById("teleff");
-teleff.addEventListener('change', function(e){
+const teleff = document.getElementById("teleff");
+teleff.addEventListener('change', function(e) {
   const inputtlff = e.target.value;
   const patrontlff = /[0-9]{6,}/gm;
   validFields.teleff = inputtlff.match(patrontlff) ? true : false;
+  console.log(Object.values(validFields));
 })

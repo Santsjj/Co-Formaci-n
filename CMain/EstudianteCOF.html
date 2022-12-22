@@ -30,12 +30,13 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
         </div>
     </header>
+  <main>
     <section>
           <section class="parte1">
     <div class="cog">
       <p id="EstadoPractica">Estado: con/sin empresa</p>
       <p>Codigo. 2345</p>
-      <button class="volver" onclick="redirigir06()"><i class="fa-solid fa-arrow-left"></i></a></button>
+      <button class="volver" onclick="redirigir06()" href="./GestionA.html"><i class="fa-solid fa-arrow-left"></i></a></button>
     </div>
   </section>
   <br>
@@ -47,38 +48,38 @@
     <img src="../img/perfil.png" alt="img" >
       </div>
     <section>
-    <p>Fecha de nacimiento:</p>
-    <p>Edad:</p>
-    <p>Nombre:</p>
-    <p>Género:</p>
-    <p>Código:</p>
-    <p>Tipo de documento :</p>
-    <p>Número de identidad:</p>
+    <p>Fecha de nacimiento: 22/02/04</p>
+    <p>Edad: 18</p>
+    <p>Nombre: Maria Lozano</p>
+    <p>Género: Femenino</p>
+    <p>Código: 5122</p>
+    <p>Tipo de documento: CC</p>
+    <p>Número de identidad: 1234567890</p>
     </section>
  
   <br>
   <section>
     <h3>Información academica</h3>
-    <p>Programa:</p>
-    <p>Semestre:</p>
-    <p>Promoción:</p>
-    <p>Jornada:</p>
-    <p>Fase:</p>
-    <p>Grupo:</p>
-    <p>Estado practica: </p>
+    <p>Programa: Ing. Software</p>
+    <p>Semestre: 3</p>
+    <p>Promoción: 12</p>
+    <p>Jornada: Diurna</p>
+    <p>Fase: Aula</p>
+    <p>Grupo: A</p>
+    <p>Estado practica: Con empresa</p>
   </section>
      </section>
         <h2>Información de contacto</h2>
   
   <section class="infContacto">
     <div>
-    <p>Correo electrónico personal:</p>
-    <p>Correo electrónico institucional:</p>
-    <p>Dirección residencia:</p>
+    <p>Correo electrónico personal: nombre@gmail.com</p>
+    <p>Correo electrónico institucional: nombre@uniempresarial.edu.co</p>
+    <p>Dirección residencia: cra 20 F #43 - 92</p>
     </div>
     <div>
-    <p>Teléfono celular:</p>
-    <p>Teléfono fijo:</p>
+    <p>Teléfono celular: 3125478960</p>
+    <p>Teléfono fijo: 4528963</p>
     <button>Documentos</button>
     </div>
   </section>
@@ -86,57 +87,98 @@
 
   <section class="infOpcional">
     <div>
-    <p>Estrato</p>
-    <p>Estado civil</p>
-    <p>Tipo de sangre</p>
-    <p>EPS</p>
-    <p>Discapacidad:</p>
+    <p>Estrato: 1</p>
+    <p>Estado civil: Soltero</p>
+    <p>Tipo de sangre: O+</p>
+    <p>EPS: Famisanar</p>
+    <p>Discapacidad: Ninguna</p>
     </div>
     <div>
-    <p>Numero libreta militar</p>
-    <p>Multiculturalidad</p>
-    <p>Contacto de emergencia</p>
-    <p>Número telefónico</p>
-    <p>Número telefónico de respaldo</p>
+    <p>Numero libreta militar: 123456</p>
+    <p>Multiculturalidad: No</p>
+    <p>Contacto de emergencia: Lupita Lopez</p>
+    <p>Número telefónico: 3458697541</p>
+    <p>Número telefónico de respaldo:3254869751</p>
     </div>
   </section>
-        <h1>Empresa Coformadora</h1>
-        <button onclick="redirigir11()">Editar</button>
-        <button>Historial Practicas</button>
-        <p>Tipo de Escenario</p>
+        <h2>Empresa coformadora</h2>
+        <button onclick="redirigir11()" class="estCof"><a href="./EditEstudianteCOF.html">Editar</a></button>
+        <button class="hisPrac">Historial practicas</button>
+      <div class="tEsc">
+        <h4>Tipo de escenario</h4>
+      </div>
+      <section class="infEmp">
+        <section>
         <img src="../img/placeh.png" class="img" alt="logo">
-        <p>Nombre Empresa</p>
-        <p>Info Empresa</p>
-        <p>NIT</p>
-        <p>Codigo Verificación</p>
-        <p>Contacto Empresa</p>
-        <p>Nombre Contacto</p>
-        <p>Cargo</p>
-        <p>Correo 1</p>
-        <p>Correo 2</p>
-        <p>Celular</p>
-        <p>Fijo</p>
-        <p>Tutor Encargado</P>
-        <p>Nombre Tutor</p>
-        <p>Cargo</p>
-        <p>Correo</p>
-        <p>Celular</p>
-        <p>Tipo de Vinculación</p>
+      </section>
+        <div>
+        <h3>Nombre empresa</h3>
+          <br>
+        <p>Información empresa. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas volutpat massa eget congue. Praesent vestibulum enim id velit eleifend, quis consequat libero vulputate. Morbi interdum imperdiet aliquam. Nunc sit amet erat fermentum, molestie quam quis, consequat leo. Proin lacinia ultrices ligula et egestas. Vestibulum eleifend metus ut gravida venenatis. Nunc scelerisque eleifend ligula, vitae rhoncus arcu accumsan quis. Aliquam ut quam nec nibh molestie hendrerit ut vel sapien.</p>
+        </div>
+      </section>
+     <h3 class="pInfo">NIT: 01234567</h3>
+        <h3 class="pInfo2">Código de verificación: 0123</h3><br>
+      <h3 class="subT">Contacto Empresa</h3>
+      <section class="infContacto">
+        <section >
+        <p>Nombre Contacto: Pepito Perez</p>
+        <p>Cargo: Gerente</p>
+        </section>
+        <section>
+        <p>Correo 1: nombre@gmail.com</p>
+        <p>Correo 2: nombre@gmail.com</p>
+        </section>
+        <section>
+        <p>Celular: 3102586974</p>
+        <p>Fijo: 1478523</p>
+        </section>
+      </section>
+      <h3 class="subT">Tipo de Vinculación</h3>  
+      <section class="vincu">
+        <section>
         <p>Vinculación Formativa o Contrato Sena</p>
-        <p>Tiempo Contrato</p>
-        <p>Sostenimiento o sueldo</p>
-        <p>Cantidad $</p>
-        <p>Perioridad de Pago</p>
+        <p>Tiempo Contrato: Formativo</p>
+        <p>Sostenimiento o sueldo: Si</p>
+      </section>
+        <section>
+        <p>Cantidad:<b>$800.000</b></p>
+        <p>Perioridad de Pago: Mensual</p>
+        <p>Forma de Pago: Consignación</p>
+        </section>
+        <section>
         <p>Horario</p>
-        <p>Forma de Pago</p>
-        <p>Docente de acompañamiento</p>
-        <p>Nombre Docente</p>
-        <p>Documento Identidad</p>
-        <p>Correo Institucional</p>
-        <p>Celular</p>
-        <p>Fecha Inicio:</p>
-        <p>Fecha Fin:</p>
-    </section>
+        <p>L - V 8AM - 5PM</p>
+          </section>
+        </section>
+      <h3 class="subT">Tutor Encargado</h3>
+      <section class="infContacto">
+        <section>
+        <p>Nombre Tutor: Freddy Nomada</p>
+        <p>Cargo: Jefe Tecnología</p>
+        </section>
+        <section>
+        <p>Correo: nombre@gmail.com</p>
+        <p>Celular: 3124569870</p>
+        </section>
+      </section> 
+        <h3 class="subT">Docente de acompañamiento</h3>
+      <section class="infContacto">
+        <section>
+        <p>Nombre Docente: Lorenzo Niño</p>
+        <p>Documento Identidad: 1245369870</p>
+      </section>
+        <section>
+        <p>Correo Institucional: nombre@uniempresarial.edu.co</p>
+        <p>Celular:3152468790</p>
+        </section>
+      </section>
+      <div class="tEsc">
+        <h4>Fecha practicas: 01/01/23 - 01/03/23</h4>
+      </div>
+      <br>
+      </main>
     <footer>
         <div class="footer1">
             <img src="../img/logoFooter.png" alt="Logo uniempresarial y cámara de comercio">

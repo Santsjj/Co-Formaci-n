@@ -10,6 +10,9 @@ a{
     color: white;
 }
 
+a:hover{
+  color: #dd0034;
+}
 
 .header1{
     background-color: #0e1f87;
@@ -132,26 +135,6 @@ footer{
     display: inline-block;
 }
 
-.divTitulo{
-    width: 30%;
-    height: 50px;
-    background-color: #dd0034;
-    margin-top: 200px;
-}
-
-.divTitulo h2{
-    background-color: #dd0034;
-    color: white;
-    width: 40vw;
-    height: 12vh;
-    padding: 18px 30px;
-    text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    letter-spacing: 1px;
-    border-radius: 5px;
-}
-
 .sectionBotones{
     width: 85%;
     height: 30px;
@@ -205,13 +188,14 @@ footer{
   justify-content: space-around;
 }
 .infPersonal p{
-  font-size: 20px;
+  font-size: 22px;
 }
 h2{
   color: #dd0034;
   text-align: center;
   font-size: 35px;
   margin-top: 2vh;
+  letter-spacing: 1px;
 }
 .infPersonal img{
   width: 8vw;
@@ -225,6 +209,12 @@ h2{
   box-shadow:  2px 2px 3px gray;
   display: flex;
   justify-content: space-around;
+  font-size: 22px;
+}
+.infContacto button{
+  font-size: 22px;
+  width: 10vw;
+  height: 4vh;
 }
 .infOpcional{
   margin: 2vh 2vw;
@@ -233,6 +223,7 @@ h2{
   box-shadow:  2px 2px 3px gray;
   display: flex;
   justify-content: space-around;
+  font-size: 22px;
 }
 .fPracticas h3{
   font-size: 25px;
@@ -247,6 +238,139 @@ h2{
   margin-left: 2vw;
   background-color:#0e1f87;
   color: white;
+}
+.estCof{
+  width: 12vw;
+  height: 5vh;
+  font-size: 22px;
+  margin-left: 2vw;
+  background-color:#0e1f87;
+  color: white;
+  margin: 3vh 2vw;
+  border-radius: 10px;
+}
+.hisPrac{
+  width: 16vw;
+  height: 5vh;
+  font-size: 22px;
+  margin-left: 2vw;
+  background-color:#0e1f87;
+  color: white;
+  margin: 3vh 2vw;
+  border-radius: 10px;
+}
+.infEmp{
+  margin: 2vh 2vw;
+  border: 1px solid #b1a9a9;
+  padding: 6vh 3vw;
+  box-shadow:  2px 2px 3px gray;
+  display: flex;
+  font-size: 25px;
+}
+.infEmpEdit{
+  margin: 1vh 2vw;
+  border: 1px solid #b1a9a9;
+  padding: 6vh 3vw;
+  box-shadow:  2px 2px 3px gray;
+  display: flex;
+  font-size: 25px;
+}
+.tEsc{
+  margin: 1vh 2vw;
+  font-size: 25px;
+}
+.infContactoEdit{
+  margin: 2vh 2vw;
+  border: 1px solid #b1a9a9;
+  padding: 2vh 1vw;
+  box-shadow:  2px 2px 3px gray;
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+}
+.infContactoEdit section{
+  width: 30%;
+}
+.infContactoEdit input{
+  width: 60%;
+}
+.infEmp img{
+  width: 11vw;
+  height: 20vh;
+  margin: 0 6vw 2vh 3vw;
+}
+.infEmpEdit img{
+  width: 10vw;
+  height: 20vh;
+  margin: 0 6vw 2vh 3vw;
+}
+.inputInf{
+  width: 100%;
+  height: 13vh;
+}
+.infEmpEdit div{
+ width: 80%; 
+}
+.vincu{
+  margin: 2vh 2vw;
+  border: 1px solid #b1a9a9;
+  padding: 2vh 2vw;
+  box-shadow:  2px 2px 3px gray;
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+}
+.vincuEdit{
+  margin: 2vh 2vw;
+  border: 1px solid #b1a9a9;
+  padding: 2vh 1vw;
+  box-shadow:  2px 2px 3px gray;
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+}
+.vincuEdit section{
+  width: 32%;
+}
+.subT{
+  font-size: 30px;
+  color: #0e1f87;
+  margin-left: 2vw;
+}
+.editEstCof{
+  display:inline-block;
+  justify-content: space-between;
+  font-size: 22px;
+  height: 6vh;
+  width: 100%;
+  margin: 3vh auto 2vh 2vw;
+}
+.editEstCof select{
+  height: 5vh;
+  width: 20vw;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+}
+.bHistorial{
+  height: 5vh;
+  width: 15vw;
+  text-align: center;
+  font-size: 22px;
+  background-color:#0e1f87;
+  color: white;
+  border-radius: 10px;
+  margin-left: 50%;
+}
+.editNit{
+  margin: 2vh 2vw;
+  border: 1px solid #b1a9a9;
+  padding: 2vh 2vw;
+  box-shadow:  2px 2px 3px gray;
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+  
 }
 .tableHistorial{
     width: 85%;
@@ -293,8 +417,8 @@ td{
 
 .sectionTitulo{
     width: 100%;
-    height: 40vh;
-    margin-top: 10px;
+    height: 45vh;
+    margin-top: 1vh;
     background-image:linear-gradient(90deg, #ffc0cb4b 40%, white), url('../img/fondo1.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,24 +430,25 @@ td{
 
 .divTitulo{
     background-color: #0e1f87;
-    margin-top: 200px;
+    margin-top: 18vh;
     color: white;
     width: 40vw;
     height: 12vh;
-    padding: 18px 30px;
+    padding: 0 3%;
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     letter-spacing: 1px;
     border-radius: 5px;
     font-weight: 600;
+  padding-top:2vh ;
 }
 
 .title1{
     width: 30%;
-    height: 7vh;
+    height: 6vh;
     background-color: #dd0034;
-    margin-top: 10vh;
+    margin-top: 12vh;
 }
 
 .title1 h2{
@@ -332,16 +457,16 @@ td{
     padding: 1vh 3vw;
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
+    font-size: 65px;
     letter-spacing: 1px;
     border-radius: 5px;
 }
 
 .title2{
     width: 32%;
-    height: 7vh;
+    height: 6vh;
     background-color: #0e1f87;
-    margin-top: 5vh;
+    margin-top: 7vh;
 }
 
 .title2 h2{
@@ -350,7 +475,7 @@ td{
     padding: 2vh 3vw;
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
+    font-size: 65px;
     letter-spacing: 1px;
     border-radius: 5px;
 }
@@ -369,7 +494,7 @@ td{
     height: 10vh;
 }
 .inicioSesion{
-  margin: 46vh 30vw 3vh 30vw;
+  margin: 50vh 30vw 3vh 30vw;
   padding: 5vh;
   border: 40px solid #dd0034;
   border-radius: 10px;
@@ -431,6 +556,423 @@ td{
 }
 
 .menuCoformacion{
+  margin: 50vh auto 5vh auto;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.menuCoformacion div{
+  width: 100%;
+  height: 17vh;
+  padding: 3% 0 0 2vw;
+  margin-bottom: 5vh;
+  background-color: #dd0034;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px grey;
+}
+
+.botonCoformacion{
+  letter-spacing: 1px;
+}
+
+.menuCoformacion div i{
+  margin-right: 1vw;
+  font-size: 70px;
+}
+
+#back{
+    background-color: #dd0034;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 5vw;
+    height: 5.5vh;
+    margin: 10vh 1vw 2vh 87.5%;
+    font-size: 23px;
+}
+
+#back a{
+    color: white;
+    text-decoration: none;
+}
+
+#back:hover{
+    background-color: grey;
+}
+
+.paginaEmpresa{
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+
+.divInfo{
+  width: 85%;
+  height: 35vh;
+  padding: 2.5% 4%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px grey;
+}
+
+.divInfo img{
+  height: 25vh;
+  margin-right: 3vw;
+  border-radius: 10px;
+}
+
+.divInfo2{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.divInfo2 p, .divInfo2 a, .divInfo2 h1{
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+}
+
+.divInfo2 h1{
+  font-size: 40px;
+  line-height: 10vh;
+}
+
+.divInfo2 p{
+  line-height: 5vh;
+  font-size: 20px;
+}
+
+.divInfo2 a{
+  line-height: 5vh;
+  font-size: 20px;
+}
+
+.divInfo2 a:hover{
+  color: #dd0034;
+}
+
+
+.divInfo3{
+  width: 84%;
+  margin: 6vh 8%;
+}
+
+.infoEmpresa{
+  font-size: 20px;
+  text-align: justify;
+}
+
+.pInfo{
+  display: inline-block;
+  width:45%;
+  height: 8vh;
+  padding: 1% 10%;
+  margin: 3vh 0vw 3vh 3vw;
+  font-weight: bold;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px grey;
+}
+
+.pInfo2{
+  display: inline-block;
+  width:45%;
+  height: 8vh;
+  padding: 1% 7%;
+  margin: 3vh 2vw;
+  font-weight: bold;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px grey;
+}
+
+.divInfo3 a{
+  margin-left: 75%;
+  font-size: 18px;
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+.divInfo3 a:hover{
+  color: #dd0034;
+}
+
+.infoContacto{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.infoContacto h1{
+  text-align: center;
+  color: #dd0034;
+  line-height: 10vh;
+  letter-spacing: 2px; 
+  font-size: 40px;
+}
+
+.infoContacto div{
+  width: 100%;
+  height: 100%;
+  margin: 3vh auto;
+  padding: 2%;
+  font-size: 23px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px grey;
+}
+
+.infoContacto div p{
+  margin-bottom: 3vh;
+}
+
+p strong{
+  color: #0e1f87;
+  letter-spancing: 1px;
+}
+
+.ide{
+  width: 6vw;
+  height: 4vh;
+  margin-right: 1vw; 
+  font-size: 20px;
+  text-align: center;
+}
+
+.numIde{
+  display: inline-block;
+}
+
+.aInfo{
+  color: #dd0034;
+  text-decoration: underline;
+}
+
+.aInfo:hover{
+  color: grey;
+}
+
+.h1Empresa{
+  color: #dd0034;
+  text-align: center;
+  line-height: 10vh;
+  letter-spacing: 2px; 
+  font-size: 40px;
+}
+
+  .tablaEmpresa{
+    width: 85%;
+    margin: 3vh auto;
+  }
+
+  .tablaEmpresa th{
+    color: #0e1f87;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .tdSol{
+    text-align: center;
+    font-weight: bold;
+    color: green;
+  }
+
+  .tdOcu{
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+  }
+
+  .tdPrograma{
+    width: 70%;
+    padding-left: 2%;
+  }
+
+  .thPrograma{
+    padding-left: 2%;
+    letter-spacing: 1px;
+  }
+
+  .cupos{
+    width: fit-content;
+    padding: 1%;
+    margin-left: 7.5%;
+    margin-bottom: 5vh;
+    font-size: 17px;
+    border: 1px solid gray;
+    border-radius: 3%;
+    box-shadow: 3px 5px 10px grey;
+  }
+
+  .h1Enempresa{
+    margin-bottom: 5vh;
+    color: #0e1f87;
+    line-height: 10vh;
+    letter-spacing: 2px; 
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .tablaEstudiantes{
+    width: 85%;
+    margin: 0 auto 10vh auto;
+  }
+
+  .td{
+    padding-left: 4%;
+  }
+
+  .tdCentro{
+    text-align: center;
+    width: 20%;
+  }
+
+  .notificaciones{
+    width
+  }
+
+  #back2{
+    background-color: #dd0034;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 5vw;
+    height: 5.5vh;
+    margin: 60vh 1vw 2vh 85%;
+    font-size: 23px;
+}
+
+#back2 a{
+    color: white;
+    text-decoration: none;
+}
+
+#back2:hover{
+    background-color: grey;
+}
+
+.notificaciones{
+  width: 80%;
+  height: 20vh;
+  margin:2vh auto 5vh auto;
+  padding: 2% 5%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px grey;
+}
+
+.icono{
+  color: yellow;
+  margin-right: 3vw; 
+  text-shadow: 5px 5px 5px black;
+  font-size: 70px;
+}
+
+.titulo{
+  color: #c06500;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -12vh;
+  margin-left: 7vw;
+}
+
+.infoNot{
+  margin-left: 7vw;
+  margin-top: 2vh;
+  font-size: 22px;
+}
+
+.titulo2{
+  color: #c00000;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -12vh;
+  margin-left: 7vw;
+}
+
+.icono2{
+  color: #c00000;
+  margin-right: 3vw; 
+  text-shadow: 1px 5px 3px black;
+  font-size: 70px;
+}
+
+.titulo3{
+  color: green;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -12vh;
+  margin-left: 7vw;
+}
+
+.icono3{
+  color: green;
+  margin-right: 3vw; 
+  text-shadow: 1px 5px 3px black;
+  font-size: 70px;
+}
+
+.infoNot2{
+  margin-left: 7vw;
+  margin-top: -10vh;
+  font-size: 25px;
+}
+
+.h1Infoe{
+  background-color: #dd0034;
+  color: white;
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 45px;
+  width: 80%;
+  padding: 1% 0;
+  margin: 20vh auto 0vh auto;
+}
+
+.infoe{
+  width: 80%;
+  border: 2px solid grey;
+  border-top-color: #dd0034;
+  margin: 0 auto 10vh auto;
+}
+
+.h1Logo{
+  margin: 5vh auto 3vh 10vw;
+  letter-spacing: 3px;
+}
+
+.logoInfo{
+  width: 15vw;
+  height: 35vh;
+  border-radius: 5px ;
+  margin-left: 5vw;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+  .headerIng{
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.headerIng img{
+  height: 10vh;
+
+}
+  .menuCoformacion{
   margin: 45vh auto 5vh auto;
   width: 35%;
   justify-content: space-between;
@@ -464,79 +1006,6 @@ td{
 .menuCoformacion div i{
   margin-right: 1vw;
   font-size: 80px;
-}
-
-#back{
-    background-color: #dd0034;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    width: 4vw;
-    height: 4vh;
-    margin: 10vh 1vw 2vh 88.5%;
-    font-size: 25px;
-}
-
-#back a{
-    color: white;
-    text-decoration: none;
-}
-
-#back:hover{
-    background-color: grey;
-}
-
-.paginaEmpresa{
-  color: #0000FF;
-  text-decoration: underline;
-}
-
-.divInfo{
-  width: 85%;
-  height: 35vh;
-  padding: 2.5% 4%;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 5px 5px 8px grey;
-}
-
-.divInfo img{
-  height: 25vh;
-  margin-right: 3vw;
-  border-radius: 10px;
-}
-
-.divInfo2{
-  display: inline-block;
-  vertical-align: top;
-}
-
-.divInfo2 p, .divInfo2 a, .divInfo2 h1{
-  display: inline-block;
-  vertical-align: top;
-  width: 80%;
-}
-
-.divInfo2 h1{
-  font-size: 40px;
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
-  .headerIng{
-    width: 100%;
-    height: 15vh;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    box-shadow: 2px 2px 10px grey;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-.headerIng img{
-  height: 10vh;
-
 }
   .header2{
     height: 10vh;
@@ -669,7 +1138,7 @@ td{
 }
 .sectionTitulo{
     width: 100%;
-    height: 25vh;
+    height: 45vh;
     margin-top: 10px;
     background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/historialCertificados.jpg);
     background-repeat: no-repeat;
