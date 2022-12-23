@@ -170,6 +170,9 @@ footer{
   margin-top: 1vh;
   margin-bottom: 2vh;
 }
+.busEmp{
+ margin-top: 20vh;
+}
 
 .cog{
   font-family: Arial, Helvetica, sans-serif;
@@ -205,7 +208,7 @@ h2{
 .infContacto{
   margin: 2vh 2vw;
   border: 1px solid #b1a9a9;
-  padding: 2vh 2vw;
+  padding: 2vh 1vw;
   box-shadow:  2px 2px 3px gray;
   display: flex;
   justify-content: space-around;
@@ -215,6 +218,9 @@ h2{
   font-size: 22px;
   width: 10vw;
   height: 4vh;
+}
+.infContacto input{
+  width: 15vw;
 }
 .infOpcional{
   margin: 2vh 2vw;
@@ -266,6 +272,7 @@ h2{
   box-shadow:  2px 2px 3px gray;
   display: flex;
   font-size: 25px;
+  justify-content: space-around;
 }
 .infEmpEdit{
   margin: 1vh 2vw;
@@ -288,14 +295,23 @@ h2{
   justify-content: space-around;
   font-size: 22px;
 }
+h1{
+  text-align: center;
+  color: #dd0034;
+  margin: 2vh auto 2vh auto;
+}
 .infContactoEdit section{
   width: 30%;
 }
 .infContactoEdit input{
   width: 60%;
 }
+.linkInfEmp{
+  color: #2052e9;
+  font-size: 18px;
+}
 .infEmp img{
-  width: 11vw;
+  width: 10vw;
   height: 20vh;
   margin: 0 6vw 2vh 3vw;
 }
@@ -329,29 +345,29 @@ h2{
   justify-content: space-around;
   font-size: 22px;
 }
+.observaciones{
+  margin: 2vh 2vw;
+  border: 1px solid #b1a9a9;
+  padding: 2vh 3vw;
+  box-shadow:  2px 2px 3px gray;
+  font-size: 22px;
+}
 .vincuEdit section{
-  width: 32%;
+  width: 33%;
 }
 .subT{
   font-size: 30px;
   color: #0e1f87;
   margin-left: 2vw;
 }
-.editEstCof{
-  display:inline-block;
-  justify-content: space-between;
-  font-size: 22px;
-  height: 6vh;
-  width: 100%;
-  margin: 3vh auto 2vh 2vw;
-}
-.editEstCof select{
+
+.cog select{
   height: 5vh;
-  width: 20vw;
   text-align: center;
   font-size: 22px;
   border-radius: 10px;
 }
+
 .bHistorial{
   height: 5vh;
   width: 15vw;
@@ -359,8 +375,17 @@ h2{
   font-size: 22px;
   background-color:#0e1f87;
   color: white;
-  border-radius: 10px;
-  margin-left: 50%;
+  border-radius: 8px;
+}
+.guardarCof{
+  height: 5vh;
+  width: 15%;
+  text-align: center;
+  font-size: 22px;
+  background-color:#dd0034;
+  color: white;
+  border-radius: 8px;
+  margin: 2vh 42% 2vh 42%;
 }
 .editNit{
   margin: 2vh 2vw;
@@ -419,6 +444,7 @@ td{
     width: 100%;
     height: 45vh;
     margin-top: 1vh;
+    margin-bottom: 1vh;
     background-image:linear-gradient(90deg, #ffc0cb4b 40%, white), url('../img/fondo1.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -595,7 +621,7 @@ td{
     border-radius: 5px;
     width: 5vw;
     height: 5.5vh;
-    margin: 10vh 1vw 2vh 87.5%;
+    margin: 10vh 1vw 2vh 84%;
     font-size: 23px;
 }
 
@@ -615,7 +641,7 @@ td{
 
 
 .divInfo{
-  width: 85%;
+  width: 78%;
   height: 35vh;
   padding: 2.5% 4%;
   margin: 0 auto;
@@ -665,7 +691,9 @@ td{
   margin: 6vh 8%;
 }
 
-.infoEmpresa{
+.infoEmpresa2{
+  width: 92.5%;
+  margin: 0 auto;
   font-size: 20px;
   text-align: justify;
 }
@@ -674,7 +702,8 @@ td{
   display: inline-block;
   width:45%;
   height: 8vh;
-  padding: 1% 10%;
+  padding: 1.5%;
+  text-align: center;
   margin: 3vh 0vw 3vh 3vw;
   font-weight: bold;
   border: 1px solid gray;
@@ -686,7 +715,8 @@ td{
   display: inline-block;
   width:45%;
   height: 8vh;
-  padding: 1% 7%;
+  padding: 1.5%;
+  text-align: center;
   margin: 3vh 2vw;
   font-weight: bold;
   border: 1px solid gray;
@@ -695,7 +725,7 @@ td{
 }
 
 .divInfo3 a{
-  margin-left: 75%;
+  margin-left: 72%;
   font-size: 18px;
   color: #0000FF;
   text-decoration: underline;
@@ -706,7 +736,7 @@ td{
 }
 
 .infoContacto{
-  width: 85%;
+  width: 78%;
   margin: 0 auto;
 }
 
@@ -735,7 +765,7 @@ td{
 
 p strong{
   color: #0e1f87;
-  letter-spancing: 1px;
+  letter-spacing: 1px;
 }
 
 .ide{
@@ -768,7 +798,7 @@ p strong{
 }
 
   .tablaEmpresa{
-    width: 85%;
+    width: 78%;
     margin: 3vh auto;
   }
 
@@ -803,7 +833,7 @@ p strong{
   .cupos{
     width: fit-content;
     padding: 1%;
-    margin-left: 7.5%;
+    margin-left: 11%;
     margin-bottom: 5vh;
     font-size: 17px;
     border: 1px solid gray;
@@ -821,7 +851,7 @@ p strong{
   }
 
   .tablaEstudiantes{
-    width: 85%;
+    width: 78%;
     margin: 0 auto 10vh auto;
   }
 
@@ -954,6 +984,25 @@ p strong{
   height: 35vh;
   border-radius: 5px ;
   margin-left: 5vw;
+  vertical-align: middle;
+}
+
+.imgP{
+  display: inline;
+  width: 55%;
+  margin-left: 3vw ;
+  font-size: 40px;
+  line-height: 20vh;
+}
+
+.imgP2{
+  display: inline;
+  width: 55%;
+  margin-top: 5vh;
+  margin-left: -23vw;
+  font-size: 30px;
+  line-height: 20vh;
+  vertical-align: bottom;
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){

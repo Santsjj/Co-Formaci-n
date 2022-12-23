@@ -30,7 +30,9 @@
     </header>
   <main>
     <section id="form">
-      <div class="editEstCof">
+      <section class="parte1">
+        <div class="cog">
+          <div>
         <label for="estado">Estado: </label>
         <select id="estado">
             <option>Contactar con Empresa</option>
@@ -40,8 +42,12 @@
             <option>Entrevistas Realizadas</option>
             <option>Estudiante Seleccionado</option>
         </select>
-        <button class="bHistorial">Historial Practicas</button>
           </div>
+        <button class="bHistorial"><a href="./HistorialP.html">Historial Practicas</a></button>
+        
+         <button class="volver" onclick="redirigir06()"><a href="./EstudianteCOF.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+        </div>
+          </section>
        <section class="infEmpEdit">
         <section>
         <img src="../img/placeh.png" class="img" alt="logo">
@@ -88,13 +94,12 @@
       <h3 class="subT">Tipo de Vinculación</h3>  
       <section class="vincuEdit">
         <section>
-        <p>Tipo de contrato:</p>
+        <label>Tipo de contrato:</label>
           <input id="TipoVin1" type="radio" name="vinc">Sena
-        <input id="TipoVin2" type="radio" name="vinc">Formativo<br>
-          
+        <input id="TipoVin2" type="radio" name="vinc">Formativo<br><br>
         <label for="time_contrato">Tiempo Contrato:</label>
-           <input id="time_contrato" type="text">
-        <p>Sostenimiento o sueldo:</p>
+           <input id="time_contrato" type="text"><br><br>
+        <label>Sostenimiento o sueldo:</label>
           <input id="sos_suel1" type="radio" name="sos">Si
         <input id="sos_suel2" type="radio" name="sos">No
       </section>
@@ -116,13 +121,13 @@
       <section class="infContacto">
         <section>
         <label for="name_tutor">Nombre Tutor:</label>
-          <input id="name_tutor" type="text" required><br>
+          <input id="name_tutor" type="text" required><br><br>
         <label for="cargo_tutor">Cargo:</label>
           <input id="cargo_tutor" type="text" required>
         </section>
         <section>
         <label for="correo_tutor">Correo:</label>
-          <input id="correo_tutor" type="email" required><br>
+          <input id="correo_tutor" type="email" required><br><br>
         <label for="celular_tutor">Celular:</label>
           <input id="celular_tutor" type="tel" required>
         </section>
@@ -132,7 +137,7 @@
         <section>
         <label for="name_docente">Nombre Docente:</label>
           <input id="name_docente" type="text" required><br>
-        <label for="docint_docente">Documento Identidad:</label>
+        <label for="docint_docente">C.C:</label>
           <input id="docint_docente" type="number" required>
       </section>
         <section>
@@ -161,8 +166,8 @@
         <input id="fecha_fin" type="date">
       </div>
       <br>
-        
     </section>
+    <button class="guardarCof">Guardar</button>
       </main>
     <footer>
         <div class="footer1">
