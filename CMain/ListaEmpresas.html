@@ -30,11 +30,25 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
-  <main>
-<h1>Empresas</h1>
+  <main>  
+<section class="sectionTitulo">
+    <div class="divTitulo">
+      Coformación
+    </div>  
+</section>
+
+    <section class="vLista">
+     <button class="volver" onclick="redirigir06()"><a href="./GestionA.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+    </section>
+    
+        <div id="search" class="buscar">
+            <label for="searchInput"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input id="searchInput" type="text" placeholder="Buscar">
+    </div>
+      
     <div class="busEmp">
-    <select name="opcion">
-        <option value="" selected>Programa</option>
+    <select name="opcion" class="programaSel">
+        <option value="" selected>Programa solicitado</option>
         <option value="">ADMINISTRACIÓN DE EMPRESAS</option>
         <option value="">CONTADURÍA PÚBLICA Y FINANZAS INTERNACIONALES</option>
         <option value="">DISEÑO DE PRODUCTO</option>
@@ -43,77 +57,75 @@
         <option value="">INGENIERÍA INDUSTRIAL</option>
         <option value="">MARKETING Y LOGÍSTICA</option>
         <option value="">NEGOCIOS INTERNACIONALES</option>
-    </select><br>
-    <select name="opcion">
+    </select>
+    <select name="opcion" class="select2">
         <option value="" selected>Nacional o Internacional</option>
         <option value="">Nacional</option>
         <option value="">Internacional</option>
-    </select><br>
-    <div id="container">
-        <div id="search">
-            <label for="searchInput">Buscar Empresa</label>
-            <input id="searchInput" type="text" placeholder="Buscar">
+    </select>
+      <select name="opcion" class="select2">
+        <option value="" selected>Cupos disponibles</option>
+        <option value="">Cupos ocupados</option>
+    </select>
     </div>
-    </div>
-    </div>
-    <table>
+    <table class="listaEst">
         <tr>
-            <td>Nit
+            <td class="tdtitulo">Nit
             </td>
-            <td>Nombre
+            <td class="tdtitulo">Nombre Empresa
             </td>
-            <td>Cupos
+            <td class="tdtitulo">Cupos
             </td>
-            <td>Carreras Solicitadas
+            <td class="tdtitulo">Carreras Solicitadas
             </td>
         </tr>
         <tr class="name" onclick="redirigir08()">
-            <td>1021512598</td>
-            <td>Uniempresarial
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </td>
-            <td>Cupos</td>
-            <td>Programas</td>
+            <td class="tdNit">1021512598</td>
+            <td>
+                <div class="divInf">
+          <img src="../img/logoempresa.jpg" alt="logo">
+        <div class="divInf2">
+          <h1>Empresa 1.</h1>
+          <p><strong>RUT:</strong> 01234567 - 0123</p>
+          <p>Razón social</p>
+          <p>Cra 75 #20-3</p>
+        </div>
+      </div>
+            <td class="tdCupose">7</td>
+            <td class="tdProgs">*Marketing y logística.<br>
+            *Administración de empresas.</td>
         </tr>
         <tr class="name" onclick="redirigir08()">
-            <td>2127928</td>
-            <td>KFC
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </td>
-            <td>Cupos</td>
-            <td>Programas</td>
+            <td class="tdNit">048085795</td>
+            <td>
+                <div class="divInf">
+          <img src="../img/logoempresa.jpg" alt="logo">
+        <div class="divInf2">
+          <h1>Empresa 2.</h1>
+          <p><strong>RUT:</strong> 01234567 - 0123</p>
+          <p>Razón social</p>
+          <p>Cra 35 #0-34</p>
+        </div>
+      </div>
+            <td class="tdCupose">3</td>
+            <td class="tdProgs">*Ingeniería industrial.<br>
+            *Ingeniería de software.</td>
         </tr>
-        <tr class="name" onclick="redirigir08()">
-            <td>1412205</td>
-            <td>CorParques
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </td>
-            <td>Cupos</td>
-            <td>Programas</td>
-        </tr>
-        <tr class="name" onclick="redirigir08()">
-            <td>261120548</td>
-            <td>Banco de Alimentos
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </td>
-            <td>Cupos</td>
-            <td>Programas</td>
-        </tr>
-        <tr class="name" onclick="redirigir08()">
-            <td>270820954</td>
-            <td>ITS Technology
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </td>
-            <td>Cupos</td>
-            <td>Programas</td>
-        </tr>
-        <tr class="name" onclick="redirigir08()">
-            <td>241220598</td>
-            <td>Servicámara
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </td>
-            <td>Cupos</td>
-            <td>Programas</td>
+      <tr class="name" onclick="redirigir08()">
+            <td class="tdNit">547949822</td>
+            <td>
+                <div class="divInf">
+          <img src="../img/logoempresa.jpg" alt="logo">
+        <div class="divInf2">
+          <h1>Empresa 3.</h1>
+          <p><strong>RUT:</strong> 01234567 - 0123</p>
+          <p>Razón social</p>
+          <p>Calle 35 Av. Chile</p>
+        </div>
+      </div>
+            <td class="tdCupose">5</td>
+            <td class="tdProgs">*Negocios internacionales.<br>
+          </td>
         </tr>
     </table>
     </main>

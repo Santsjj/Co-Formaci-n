@@ -32,36 +32,50 @@
       <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
     </div>
   </header>
+  <main>
   <section>
+     <section class="volverEst">
+     <button class="volver1" onclick="redirigir06()"><a href="./Estudiante.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+    </section>
     <form id="form">
-      <h1>Información Personal</h1>
+      <h2>Información Personal</h2>
+      <section class="infEmpEdit">
+        <section>
       <img src="../img/placeh.png" class="img" alt="foto"><br>
       <input type="file" accept="image/png, image/jpeg" >
-      <p>Fecha de Nacimiento: </p>
-      <input id="fn" type="date" required>
-      <p>Edad:</p>
-      <input id="age" type="number" required>
-      <p>Nombre: </p>
-      <input id="name" type="text" required>
-      <p>Sexo: </p>
+        </section>
+        <div>
+      <label for="fn">Fecha de Nacimiento: </label>
+      <input id="fn" type="date" required><br><br>
+      <label for="age">Edad:</label>
+      <input id="age" type="number" required><br><br>
+      <label for="name">Nombre: </label>
+      <input id="name" type="text" required><br><br>
+      <label for="sex">Sexo: </label>
       <select id="sex" required>
         <option value="" selected>Sexo</option>
         <option>Femenino</option>
         <option>Masculino</option>
         <option>Otro</option>
       </select>
-      <p>Código: </p>
-      <input id="code" type="number" required>
-      <p>Tipo de Documento : </p>
+        </div>
+        <div>
+      <label for="code">Código: </label>
+      <input id="code" type="number" required><br><br>
+      <label for="id">Tipo de Documento : </label>
       <select id="td" required>
         <option value="" selected>Seleccione</option>
         <option>C.C</option>
         <option>T.I</option>
-      </select>
-      <p>Número de Identidad: </p>
+      </select><br><br>
+      <label for="ni">Número de Identidad: </label>
       <input id="ni" type="number" required>
-      <p>Información Acedemica</p>
-      <p>Programa: </p>
+          </div>
+      </section>
+      <h2>Información Acedemica</h2>
+      <section class="infContactoEdit">
+        <div>
+      <label for="prog">Programa: </label>
       <select id="prog" name="opcion" required>
         <option value="" selected>Programa</option>
         <option>ADMINISTRACIÓN DE EMPRESAS</option>
@@ -72,8 +86,8 @@
         <option>INGENIERÍA INDUSTRIAL</option>
         <option>MARKETING Y LOGÍSTICA</option>
         <option>NEGOCIOS INTERNACIONALES</option>
-      </select><br>
-      <p>Semestre: </p>
+      </select><br><br>
+      <label for="semestre">Semestre: </label>
       <select id="semestre" name="opcion" required>
         <option value="" selected>Semestre</option>
         <option>Primero</option>
@@ -83,31 +97,41 @@
         <option>Quinto</option>
         <option>Sexto</option>
         <option>Septimo</option>
-      </select><br>
-      <p>Promoción: </p>
-      <input id="prom" type="text" required>
-      <p>Jornada: </p>
-      <input id="jornada1" type="radio" name="jornada">Diurna
-      <input id="jornada2" type="radio" name="jornada">Nocturna
-      <p>Fase: </p>
-      <input id="fase1" type="radio" name="fase">Aula
-      <input id="fase2" type="radio" name="fase">Practica
-      <p>Estado Practica: </p>
-      <p>Campo no Editable</p>
-      <h1>Información de Contacto</h1>
-      <p>Correo electrónico Personal: </p>
-      <input id="emailp" type="email" required>
-      <p>Correo electrónico Institucional: </p>
-      <input id="emaili" type="email" required>
-      <p>Dirección Residencia: </p>
+      </select></div>
+        <div>
+      <label>Promoción: </label>
+      <input id="prom" type="text" required><br><br>
+      <label for="jornada">Jornada: </label>
+      <select id="jornada">
+        <option value="" selected>Jornada</option>
+        <option>Diurna</option>
+        <option>Nocturna</option> 
+      </select>
+          </div>
+      </section>
+    
+      <h2>Información de Contacto</h2>
+      <section class="infContactoEdit">
+        <div>
+      <label for="emailp">Correo electrónico Personal: </label>
+      <input id="emailp" type="email" required><br><br>
+      <label for="emaili">Correo electrónico Institucional: </label>
+      <input id="emaili" type="email" required><br><br>
+      <label for="dirrecionr">Dirección Residencia: </label>
       <input id="dirrecionr" type="text" required>
-      <p>Teléfono Celular: </p>
-      <input id="telefc" type="tel" required>
-      <p>Teléfono Fijo:</p>
+          </div>
+        <div>
+      <label for="telefc">Teléfono Celular: </label>
+      <input id="telefc" type="tel" required><br><br>
+      <label for="teleff">Teléfono Fijo:</label>
       <input id="teleff" type="tel" placeholder="(601)" required><br>
       <button>Documentos</button>
-      <h1>Información Opcional</h1>
-      <p>Estrato</p>
+          </div>
+      </section>
+      <h2>Información Opcional</h2>
+      <section class="infContactoEdit">
+        <div>
+      <label for="estrato">Estrato</label>
       <select id="estrato">
         <option selected>Seleccione</option>
         <option>Uno</option>
@@ -116,8 +140,8 @@
         <option>Cuatro</option>
         <option>Cinco</option>
         <option>Seis</option>
-      </select>
-      <p>Estado Civil</p>
+      </select><br><br>
+      <label for="estadoc">Estado Civil</label>
       <select id="estadoc">
         <option selected>Seleccione</option>
         <option>Solter@</option>
@@ -125,8 +149,8 @@
         <option>Divorciad@</option>
         <option>viud@</option>
         <option>Unión Libre</option>
-      </select>
-      <p>Tipo de Sangre</p>
+      </select><br><br>
+      <label for="ts">Tipo de Sangre</label>
       <select id="ts">
         <option selected>Seleccione</option>
         <option>A+</option>
@@ -137,26 +161,31 @@
         <option>C-</option>
         <option>AB+</option>
         <option>AB-</option>
-      </select>
-      <p>EPS</p>
-      <input id="eps" type="text">
-      <p>Discapacidad:</p>
-      <input id="discapacidad" type="text">
-      <p>Convenio</p>
-      <p>Numero Libreta Militar</p>
-      <input id="nlm" type="number">
-      <p>Multiculturalidad</p>
+      </select><br><br>
+      <label for="eps">EPS</label>
+      <input id="eps" type="text"><br><br>
+      <label for="discapacidad">Discapacidad:</label>
+      <input id="discapacidad" type="text"><br><br>
+          </div>
+        <div>
+      <label for="nlm">Numero Libreta Militar</label>
+      <input id="nlm" type="number"><br><br>
+      <label for="multc">Multiculturalidad</label>
       <select id="multc">
         <option>Indígena</option>
         <option>Afrocolombiano</option>
         <option>Romaníes</option>
-      </select>
-      <p>Contacto de Emergencia</p>
-      <input type="text">
-      <p>Número Telefónico</p>
-      <input type="number">
+      </select><br><br>
+      <label for="contE">Contacto de Emergencia</label>
+      <input type="text" id="contE"><br><br>
+      <label for="contN">Número Telefónico</label>
+      <input type="number" id="contN">
+      </section>
     </form>
+    </div>
   </section>
+    <button class="guardarCof">Guardar</button>
+    </main>
   <footer>
     <div class="footer1">
       <img src="../img/logoFooter.png" alt="Logo uniempresarial y cámara de comercio">
