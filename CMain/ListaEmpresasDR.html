@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ListaEmpresas</title>
+    <title>Lista Empresas</title>
     <link rel="stylesheet" href="../syles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,55 +30,59 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
+    <section class="sectionTitulo">
+    <div class="divTitulo">
+      Relacionamiento
+    </div>  
     <div id="container">
-        <div id="search">
-            <label for="searchInput">Buscar Empresa</label>
+        <div id="search" class="buscar2">
+            <label for="searchInput"><i class="fa-solid fa-magnifying-glass"></i></label>
             <input id="searchInput" type="text" placeholder="Buscar">
-            <button onclick="redirigir13">Añadir Empresa</button>
-    </div>
+        </div>
+        <button class="adEmpresa" onclick="redirigir13()"><i class="fa-solid fa-plus"></i></button>
     </div>
     <ul>
         <li class="name" onclick="redirigir09()">
-            <p>1021512598</p>
-            <p>Uniempresarial
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </p>
-            <p>Cupos</p>
+            <div class="divDR">
+          <img src="../img/logoempresa.jpg" alt="logo">
+        <div class="divDR2">
+          <h1>Empresa 1.</h1>
+          <p><strong>NIT:</strong> 01234567</p>
+          <p>Razón social</p>
+          <p class="infCupos"><strong>Cupos disponibles: 7</strong></p>
+        </div
+          <div class="iconCan">
+              <a class="candado"><i class="fa-solid fa-unlock"></i></a>
+          </div>
+            </div>
         </li>
         <li class="name" onclick="redirigir09()">
-            <p>2127928</p>
-            <p>KFC
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </p>
-            <p>Cupos</p>
+            <div class="divDR">
+          <img src="../img/logoempresa.jpg" alt="logo">
+        <div class="divDR3">
+          <h1 class="h1Block">Empresa 2.</h1>
+          <p><strong>NIT:</strong> 01234567</p>
+          <p>Razón social</p>
+          <p class="infBlock"><strong>Cupos disponibles: 0</strong></p>
+        </div
+          <div class="iconCan">
+              <a class="candado"><i id="block" class="fa-solid fa-lock"></i></a>
+          </div>
+            </div>
         </li>
-        <li class="name" onclick="redirigir09()">
-            <p>1412205</p>
-            <p>CorParques
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </p>
-            <p>Cupos</p>
-        </li>
-        <li class="name" onclick="redirigir09()">
-            <p>261120548</p>
-            <p>Banco de Alimentos
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </p>
-            <p>Cupos</p>
-        </li>
-        <li class="name" onclick="redirigir09()">
-            <p>270820954</p>
-            <p>ITS Technology
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </p>
-            <p>Cupos</p>
-        </li>
-        <li class="name" onclick="redirigir09()">
-            <p>241220598</p>
-            <p>Servicámara
-                <img class="img" src="../img/placeh.png" alt="logo">
-            </p>
-            <p>Cupos</p>
+      <li class="name" onclick="redirigir09()">
+            <div class="divDR">
+          <img src="../img/logoempresa.jpg" alt="logo">
+        <div class="divDR2">
+          <h1>Empresa 3.</h1>
+          <p><strong>NIT:</strong> 01234567</p>
+          <p>Razón social</p>
+          <p class="infCupos"><strong>Cupos disponibles: 10</strong></p>
+        </div
+          <div class="iconCan">
+              <a class="candado"><i class="fa-solid fa-unlock"></i></a>
+          </div>
+            </div>
         </li>
     </ul>
     <footer>

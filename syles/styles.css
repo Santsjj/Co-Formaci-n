@@ -176,7 +176,19 @@ footer{
     letter-spacing: 1px;
 }
 
+
 .volver{
+    background-color: #dd0034;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 5.5vw;
+    height: 5.5vh;
+    font-size: 25px;
+}
+
+.volv{
     background-color: #dd0034;
     color: white;
     font-weight: bold;
@@ -188,10 +200,23 @@ footer{
     margin: 55vh 0 0 85%;
 }
 
-.volver:hover{
+.volv:hover{
   background: grey;
   color: white;
 }
+
+.volv a:hover{
+  color: white;
+}
+
+.menuCoformacion div:hover{
+  background-color: gray;
+}
+
+.botonCoformacion:hover{
+  color:white;
+}
+
 .parte1{
   display: inline-block;
   font-size: 18px;
@@ -1190,18 +1215,42 @@ option{
 
 .select2{
   width: 29.5%;
-}
-.busEmp{
-  width: 80%;
-  margin: 12vh auto 6vh auto;
+  
 }
 
-.busEmp select{
+.listaEst{
+  width:90%;
+  margin: 10vh auto 6vh auto;
+  display: inline-block;
+  justify-content: space-around;
+  margin: 1vh 5% 5vh 5%;
+  
+}
+
+.listaEst select{
   font-size: 18px;
   letter-spacing: 2px;
-  display: inline;
   height: 6vh;
+  width: 27%;
   text-align: center;
+  margin:auto 3%;
+}
+.tablaEstudiantes{
+  width: 90%;
+  margin: 1vh 5% 3vh 5%;
+}
+.tablaEstudiantes td{
+  padding: 1vh 1vw;
+}
+.tablaEstudiantes th{
+  padding: 1vh 1vw;
+  color: #0e1f87;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.listaEm{
+  width:80%;
+  margin: 2vh auto 10vh auto;
 }
 
 .tdtitulo{
@@ -1256,6 +1305,290 @@ option{
 }
 
 .tdProgs{
+  font-size: 20px;
+}
+
+#container{
+  width: 80%;
+  margin: 20vh auto 10vh auto;
+}
+
+
+.buscar2{
+  justify-content:baseline;
+  width: fit-content;
+  display: inline-block;
+  margin: 4vh 15vw 0vh 5.5vw;  
+  font-size: 22px;
+  color: #dd0034;
+}
+
+.buscar2 input{
+  height: 4vh;
+  width: 45vw;
+  font-size: 18px;
+  border-top-style:hidden;
+  border-left-style:hidden;
+  border-right-style:hidden;
+  border-bottom-style: 2px outset grey;
+}
+
+.buscar2 i{
+  margin-right: 1vw;
+}
+
+.adEmpresa{
+  background-color: #0e1f87;
+  color: white;
+  display: inline-block;
+  height: 5vh;
+  width: 5vw;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.adEmpresa:hover{
+  background-color: gray;
+}
+
+.divDR{
+  width: 70%;
+  height: 35vh;
+  padding: 2.5% 4%;
+  margin: 0vh auto 10vh auto;
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px grey;
+}
+
+.divDR img{
+  height: 25vh;
+  margin-right: 3vw;
+  border-radius: 10px;
+}
+
+.divDR2{
+  display: inline-block;
+  vertical-align: top;
+  width: 62%;
+}
+
+.divDR2 p, .divDR2 h1{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 80%;
+}
+
+.divDR2 h1{
+  font-size: 40px;
+  color: #0e1f87;
+  line-height: 6vh;
+}
+
+.divDR2 p{
+  line-height: 5vh;
+  font-size: 20px;
+}
+
+.divDR a{
+  display:inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+
+.divDR i{
+  color: grey;
+  font-size: 35px;
+  margin-left: 1vw;
+}
+
+.infCupos strong{
+  color:green;
+}
+
+.divDR3{
+  display: inline-block;
+  vertical-align: top;
+  width: 62%;
+}
+
+.divDR3 p, .divDR3 h1{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 80%;
+}
+
+.divDR3 h1{
+  font-size: 40px;
+  color: #dd0034;
+  line-height: 6vh;
+}
+
+.divDR3 p{
+  line-height: 5vh;
+  font-size: 20px;
+}
+
+.infBlock strong{
+  color: gray;
+}
+
+#block{
+  color: #dd0034;
+}
+
+.h1Logo2{
+  text-align: left;
+  margin: 5vh auto 3vh 5vw;
+  letter-spacing: 3px;
+}
+
+
+.logoInfo2{
+  width: 15vw;
+  height: 35vh;
+  border-radius: 5px ;
+  border: 2px outset grey;
+  margin-left: 5vw;
+  vertical-align: top;
+}
+
+.infInp{
+  margin-top: 3vh;
+  margin-left: 5vw;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #0e1f87;
+  display: inline-block;
+}
+
+.infInp input{
+  width: 35vw;
+  height: 6vh;
+  margin-bottom: 5vh;
+}
+
+.infInp input:focus{
+  outline:  2px outset #dd0034;
+  border-radius: 5px;
+}
+
+.file{
+  margin: 2vh 2.5vw;
+}
+
+.divInp{
+  border: 2px dotted red;
+  display: inline-block;
+  margin: 0 5vw 5vh 0;
+}
+
+.divInp label{
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #0e1f87;
+}
+
+.divInp input{
+  width: 30vw;
+  height: 6vh;
+  margin-top: 2vh;
+}
+
+.divInp input[type=file]{
+  font-size: 20px;
+}
+
+.divInp select{
+  width: 30vw;
+  height: 6vh;
+  margin-top: 2vh;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+  .divInp2{
+  border: 2px dotted red;
+  display: inline-block;
+  margin: 0 5vw 5vh 0;
+}
+
+.divInp2 label{
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #0e1f87;
+}
+
+.divInp2 input{
+  width: 50vw;
+  height: 6vh;
+  margin-top: 2vh;
+}
+
+.divInp input[type=date]{
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.divInp3{
+  border: 2px outset grey;
+  display: inline-block;
+  margin: 0 25vw 5vh 0;
+  padding: 0 5% 1% 5%;
+  border-radius: 2%;
+}
+
+.divInp3 label{
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #0e1f87;
+}
+
+.divInp3 input[type=checkbox]{
+  width: fit-content;
+  height: 3vh;
+  margin-top: 2vh;
+  margin-right: 1vw;
+  margin-left: 0;
+}
+
+.divInp4{
+  display: inline-block;
+  margin: 0 5vw 5vh 0;
+}
+
+.divInp4 label{
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #0e1f87;
+}
+
+.divInp4 input{
+  width: 10vw;
+  height: 6vh;
+  margin-top: 1vh;
+}
+
+.cupos2{
+    width: fit-content;
+    padding: 1%;
+    margin-left: 4%;
+    margin-bottom: 5vh;
+    border: 1px solid gray;
+    border-radius: 3%;
+    box-shadow: 3px 5px 10px grey;
+  }
+
+.cupos2 strong{
   font-size: 20px;
 }
 

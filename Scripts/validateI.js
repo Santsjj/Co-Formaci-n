@@ -13,7 +13,7 @@ form, addEventListener("submit", (e) => {
       window.location.href = "../../CMain/Estudiante.html";
     } else if (rol.value === "2") {
       console.log("2");
-      window.location.href = "../../CMain/ListaEmpresas.html";
+      window.location.href = "../../CMain/ListaEmpresasDR.html";
     } else if (rol.value === "3") {
       window.location.href = "../../CMain/GestionA.html";
     }

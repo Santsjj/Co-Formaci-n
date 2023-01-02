@@ -39,7 +39,7 @@
 </section>
 
     <section class="vLista">
-     <button class="volver" onclick="redirigir06()"><a href="./GestionA.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+     <button class="volv" onclick="redirigir06()"><a href="./GestionA.html"><i class="fa-solid fa-arrow-left"></i></a></button>
     </section>
     
         <div id="search" class="buscar">
@@ -47,7 +47,7 @@
             <input id="searchInput" type="text" placeholder="Buscar">
     </div>
     <div class="listaEst">
-    <select name="opcion" id="help" class="programaSel">
+    <select name="opcion" id="help" >
         <option value="0" selected>Programa</option>
         <option value="1">ADMINISTRACIÓN DE EMPRESAS</option>
         <option value="">CONTADURÍA PÚBLICA Y FINANZAS INTERNACIONALES</option>
@@ -57,8 +57,8 @@
         <option value="">INGENIERÍA INDUSTRIAL</option>
         <option value="">MARKETING Y LOGÍSTICA</option>
         <option value="">NEGOCIOS INTERNACIONALES</option>
-    </select><br>
-    <select name="opcion" class="select2">
+    </select>
+    <select name="opcion">
         <option value="0" selected>Semestre</option>
         <option value="">Segundo</option>
         <option value="">Tercero</option>
@@ -66,72 +66,80 @@
         <option value="">Quinto</option>
         <option value="">Sexto</option>
         <option value="">Septimo</option>
-    </select><br>
-    <select name="opcion" class="select2">
+    </select>
+    <select name="opcion">
         <option value="0" selected>Fase</option>
         <option value="">Aula</option>
         <option value="">práctica</option>
-    </select><br>
+    </select>
     
       </div>
-    <ul>
-    <li class="name"  onclick="redirigir14()">
-        <p>Cristian Mauricio Guasca Gutierrez</p>
-        <p>1021512598</p>
-        <p>Administración de Empresas</p>
-        <p>Segundo</p>
-        <p>Descripción(Promoción, Periodo)</p>
-        <p>Fase:Aula</p>
-    </li>
-    <li class="name"  onclick="redirigir14()">
-        <p>Ana Maria Castillo Garzon</p>
-        <p>2127928</p>
-        <p>Contaduría</p>
-        <p>Tercero</p>
-        <p>Descripción(Promoción, Periodo)</p>
-        <p>Fase:práctica</p>
-    </li>
-    <li class="name"  onclick="redirigir14()">
-        <p>Lina Marcela Cruz Molina</p>
-        <p>1412205</p>
-        <p>Diseño de Producto</p>
-        <p>Cuarto</p>
-        <p>Descripción(Promoción, Periodo)</p>
-        <p>Fase:práctica</p>
-    </li>
-    <li class="name"  onclick="redirigir14()">
-        <p>Carol Michell Morales Guerrero</p>
-        <p>261120548</p>
-        <p>Finanzas y Comercio Exterior</p>
-        <p>Quinto</p>
-        <p>Descripción(Promoción, Periodo)</p>
-        <p>Fase:Aula</p>
-    </li>
-    <li class="name"  onclick="redirigir14()">
-        <p>Santiago Joya Medina</p>
-        <p>270820954</p>
-        <p>Ing de Software</p>
-        <p>Sexto</p>
-        <p>Descripción(Promoción, Periodo)</p>
-        <p>Fase:Aula</p>
-    </li>
-    <li class="name"  onclick="redirigir14()">
-        <p>Laura Valentina Bustos</p>
-        <p>241220598</p>
-        <p>Ing Industrial</p>
-        <p>Septimo</p>
-        <p>Descripción(Promoción, Periodo)</p>
-        <p>Fase:práctica</p>
-    </li>
-    <li class="name"  onclick="redirigir14()">
-        <p>Paula Andrea Herrera</p>
-        <p>598206061</p>
-        <p>Marketing y Logística</p>
-        <p>Cuarto</p>
-        <p>Descripción(Promoción, Periodo)</p>
-        <p>Fase:Aula</p>
-    </li>
-    </ul>
+    <table class="tablaEstudiantes">
+    <tr>
+      <th>Nombre</th>
+      <th>Identificación</th>
+      <th>Carrera</th>
+      <th>Semestre</th>
+      <th>Promoción</th>
+      <th>Fase</th>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Cristian Mauricio Guasca Gutierrez</td>
+        <td>1021512598</td>
+        <td>Administración de Empresas</td>
+        <td>Segundo</td>
+        <td>(Promoción, periodo)</td>
+        <td>Aula</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Ana Maria Castillo Garzon</td>
+        <td>2127928</td>
+        <td>Contaduría</td>
+        <td>Tercero</td>
+        <td>(Promoción, periodo)</td>
+        <td>Práctica</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Lina Marcela Cruz Molina</td>
+        <td>1412205</td>
+        <td>Diseño de producto</td>
+        <td>Cuarto</td>
+        <td>(Promoción, eriodo)</td>
+        <td>Práctica</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Carol Michell Morales Guerrero</td>
+        <td>261120548</td>
+        <td>Finanzas y comercio exterior</td>
+        <td>Quinto</td>
+        <td>(Promoción, periodo)</td>
+        <td>Aula</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Santiago Joya Medina</td>
+        <td>270820954</td>
+        <td>Ing. Software</td>
+        <td>Sexto</td>
+        <td>(Promociónp, eriodo)</td>
+        <td>Aula</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Laura Valentina Bustos</td>
+        <td>241220598</td>
+        <td>Ing. Industrial</td>
+        <td>Septimo</td>
+        <td>(Promoción, Periodo)</td>
+        <td>Práctica</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Paula Andrea Herrera</td>
+        <td>598206061</td>
+        <td>Marketing y logística</td>
+        <td>Cuarto</td>
+        <td>(Promoción, periodo)</td>
+        <td>Aula</td>
+    </tr>
+    </table>
       </main>
     <footer>
         <div class="footer1">
