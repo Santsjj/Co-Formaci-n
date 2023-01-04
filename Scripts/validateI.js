@@ -1,10 +1,9 @@
-//variables
 'use strict';
 const email = document.querySelector("#iMail");
 const pass = document.querySelector("#iPass");
 const form = document.querySelector("#form");
 const rol = document.querySelector("#iRol");
-//validacion
+
 form, addEventListener("submit", (e) => {
   e.preventDefault();
   if (validFieldsForm() === -1) {

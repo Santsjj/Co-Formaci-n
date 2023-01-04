@@ -1,4 +1,3 @@
-//variables
 const searchInput = document.getElementById("searchInput");
 const namesFromDOM = document.getElementsByClassName("name");
 const idFromDOM = document.getElementsByClassName("id");

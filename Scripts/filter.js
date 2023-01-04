@@ -1,8 +1,6 @@
-//variables
 const searchProg = document.getElementById("searchProg");
 const names = document.querySelector(".name");
 const n = document.getElementById("name")
-//funcion buscar
 searchProg.addEventListener("change", (e)=>{
     const searchProg2 = document.getElementById("searchProg").textContent;
     const nameElement2 = document.querySelector(".name").textContent;
