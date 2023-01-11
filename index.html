@@ -47,16 +47,18 @@
         <input type="email" id="iMail" placeholder="Correo electrónico Institucional" autofocus autocomplete="on"
           required name="email" class="form"><br>
         <label><i class="fa-solid fa-lock"></i>Contraseña</label><br>
+        <div class="form2">
         <input maxlength="15"
           oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
           type="password" id="iPass" placeholder="Contraseña" required 
-          class="form"><br>
+          >
+          </div>
         <label><i class="fa-solid fa-briefcase"></i> Rol</label>
         <select name="opcion" required id="iRol">
           <option value="0" selected>Seleccione una opción</option>
           <option value="1">Estudiante</option>
           <option value="2">Dirección de Relacionamiento</option>
-          <option value="3">Co-Formación</option>
+          <option value="3">Coformación</option>
         </select><br>
         <button class="button1">Ingresar</button>
       </form>

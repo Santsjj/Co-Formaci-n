@@ -85,3 +85,15 @@ function Redir() {
   }
 
 }
+document.querySelector('.form2 span').addEventListener('click', e => {
+    const passwordInput = document.querySelector('#iPass');
+    if (e.target.classList.contains('show')) {
+        e.target.classList.remove('show');
+        e.target.textContent = '';
+        passwordInput.type = 'text';
+    } else {
+        e.target.classList.add('show');
+        e.target.textContent = 'Mostrar';
+        passwordInput.type = 'iPass';
+    }
+});
